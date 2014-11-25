@@ -42,11 +42,13 @@ angular.module('EventsApp', [])
 						} else if (value.start.dateTime) {
 							if ($scope.checkDate(value.start.dateTime) || value.recurrence) {
 								var splitDate = value.start.dateTime.split('T')
+
 								var time = splitDate[1].split('-')[0];
+								var day = splitDate[0]; // fix these two
 
 								temp.push({
 									summary: value.summary,
-									day: splitDate[0],
+									day: day,
 									time: time,
 									recurr: value.recurrence ? true : false
 								});

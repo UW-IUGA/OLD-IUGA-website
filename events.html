@@ -31,9 +31,9 @@
 					<section>
 						<ul class="cards">
 							<li class="card" ng-repeat="event in events">
-								<p>{{event.summary}}</p>
-								<p ng-if="!event.recurr">{{event.day}}</p>
-								<p ng-if="event.time">{{event.time}}</p>
+								<p>{{event.summary}}<span ng-if="!event.recurr"> - {{event.day}}</span></p>
+								
+								<p ng-if="event.time">Starts at {{event.time}}</p>
 								<p ng-if="event.recurr">This is a reoccuring event!</p>
 							</li>
 						</ul>
