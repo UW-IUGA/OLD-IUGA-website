@@ -1,0 +1,40 @@
+nav {
+    font-size: 125%;
+    border-radius: 6px;
+    padding: 0.5em;
+    background: #d7a900;
+    border-top: 5px solid #39275b;
+}
+
+nav ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+nav li {
+	text-align: center;
+    display: inline-block;
+    list-style: none;
+    margin-right: 1em;
+    width: 10%;
+    background: #eee;
+}
+
+nav li:hover {
+	border-bottom: 2px solid #39275b;
+}
+
+body {
+	background: #ebebeb;
+}
+
+iframe { 
+    margin-top: 5px;
+}
+
+/*
+
+the gold: #d7a900;
+the purple: #39275b;
+
+*/
