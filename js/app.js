@@ -33,23 +33,29 @@ angular.module('EventsApp', [])
 					angular.forEach(data.items, function(value, key) {
 						if (value.start.date) {
 							if ($scope.checkDate(value.start.date) || value.recurrence) {
+								
+								var date = moment(value.start.date);
+								var momentDate = date.format("MMMM DD, YYYY");
+								
 								temp.push({
 									summary: value.summary,
-									day: value.start.date,
+									day: momentDate,
 									recurr: value.recurrence ? true : false
 								});
 							}
 						} else if (value.start.dateTime) {
 							if ($scope.checkDate(value.start.dateTime) || value.recurrence) {
-								var splitDate = value.start.dateTime.split('T')
 
-								var time = splitDate[1].split('-')[0];
-								var day = splitDate[0]; // fix these two
+								var date = moment(value.start.dateTime);
+								var momentTime = date.format("h:mm a")
+								var momentDay = date.format("MMMM DD, YYYY");
+								var dayOfWeek = date.format("dddd");
 
 								temp.push({
 									summary: value.summary,
-									day: day,
-									time: time,
+									day: momentDay,
+									time: momentTime,
+									dayWeek: dayOfWeek,
 									recurr: value.recurrence ? true : false
 								});
 							} 
@@ -57,16 +63,14 @@ angular.module('EventsApp', [])
 					})
 
 					$scope.events = temp;
-					console.log($scope.events);
 				})
 				.error(function(err) {
 					console.log(err);
 				});
 		};
-
+		
 		$scope.getEvents();
 
-		
 	});
 
 
