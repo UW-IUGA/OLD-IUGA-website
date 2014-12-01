@@ -35,10 +35,13 @@
 					<section>
 						<ul class="cards">
 							<li class="card" ng-repeat="event in filteredEvents = (events | filter: searchString)">
-								<p>{{event.summary}}<span ng-if="!event.recurr"> - {{event.day}}</span></p>
+								<p>
+									{{event.summary}}
+									<span ng-if="!event.recurr"> - {{event.dayWeek}}, {{event.day}}</span>
+									<span ng-if="event.recurr"> - Happens every {{event.dayWeek}}!</span>
+								</p>
 								
 								<p ng-if="event.time">Starts at {{event.time}}</p>
-								<p ng-if="event.recurr">This event occurs every {{event.dayWeek}}!</p>
 							</li>
 						</ul>
 					</section>
