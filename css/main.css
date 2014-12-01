@@ -49,6 +49,17 @@ body {
 	background: #ebebeb;
 }
 
+#home {
+    text-align: center;
+}
+
+#home-photo {
+    width: 70%;
+    margin: 0;
+    margin-top: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+}
+
 iframe { 
     margin-top: 5px;
 
@@ -99,15 +110,6 @@ iframe {
     nav bar toggle thing
 
     */
-}
-
-#janet {
-    width: 80%;
-    margin-top: 10px;
-}
-
-#home {
-    text-align: center;
 }
 
 
