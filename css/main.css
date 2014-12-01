@@ -1,9 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
 nav {
     font-size: 125%;
-    border-radius: 6px;
+    font-family: 'PT Sans', sans-serif;
     padding: 0.5em;
-    background: #d7a900;
-    border-top: 5px solid #39275b;
+    background: #39275b;
+    border-top: 5px solid #d7a900;
     height: 3em;
     width: 100%;
 }
@@ -23,13 +25,14 @@ nav li {
 
 nav li a { 
     display: inline-block;
-    width: 10%;
-    background: #eee;
-
+    padding-left: 2px;
+    padding-right: 2px;
+    color: #C1C1D6;
 }
 
 nav li a:hover, .active {
-	border-bottom: 3.5px solid #3770DC;
+	border-bottom: 3.5px solid #d7a900;
+    color: white;
 }
 
 body {
