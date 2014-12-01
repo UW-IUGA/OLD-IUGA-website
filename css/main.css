@@ -156,7 +156,7 @@ iframe {
 }
 
 
-@media(max-width: 892px) {
+@media(max-width: 1000px) {
     #big-nav {
         display: none;
     }
