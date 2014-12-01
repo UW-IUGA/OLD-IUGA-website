@@ -77,6 +77,7 @@ nav li a:hover, .active {
 
 body {
     background: #ebebeb;
+    font-family: 'PT Sans', sans-serif;
 }
 
 #home {
@@ -167,6 +168,10 @@ iframe {
     .glyphicon-th-list {
         color: white;
     }
+}
+
+h1 {
+    font-weight: bold;
 }
 /*
 the gold: #d7a900;
