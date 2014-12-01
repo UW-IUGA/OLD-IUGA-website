@@ -82,12 +82,19 @@ li a, li a:hover {
 }
 
 
-#images li, img {
-    list-style-type: none;        
-    padding:0 0 0 0;
-    margin:0 0 0 0;
+
+#imageGallery img  {
+    display: inline-block;
+    padding: 7.5px 7.5px 7.5px 7.5px;
 }
 
+#imageGallery h3 {
+    background-color: #39275b;
+    color: #ffffff;
+    border: 2px;
+    border-radius: 5px;
+    padding-left: 7.5px;
+}
 
 
 
@@ -99,6 +106,7 @@ li a, li a:hover {
     */
 }
 
+/*display: inline-block;
 
 /*
 
