@@ -107,7 +107,38 @@ iframe {
     text-align: center;
 }
 
+#sections {
+    font-size: 150%;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    padding: 0.2em;
+    background: #d7a900;
+    height: 3em;
+    width: 100%;
+    text-align: left;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.1);
+}
 
+#Officers {
+    padding: 1em;
+}
+
+#Officers h3 {
+    font-size: 30px;
+    padding-left: 1em;
+}
+
+#Officers h4 {
+    font-size: 24px;
+}
+
+#Officers p {
+    font-size: 16px;
+}
+
+#IUGA p {
+    font-size: 16px;
+}
 /*
 
 the gold: #d7a900;
