@@ -1,16 +1,19 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans);
 
-nav {
+nav, #small-nav {
     font-size: 125%;
     font-family: 'PT Sans', sans-serif;
-    padding: 0.2em;
-    background: #39275b;
-    border-top: 5px solid #d7a900;
-    height: 3.5em;
     width: 100%;
     text-align: center;
-    box-shadow: 0px 5px 5px rgba(0,0,0,0.1);
-    clear: both;
+}
+
+nav {
+    background: #39275b;
+    border-top: 5px solid #d7a900; 
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.1); 
+    padding: 0.2em;
+    height: 3.5em;
+    overflow: hidden;
 }
 
 #logo {
@@ -29,9 +32,30 @@ nav li {
     margin-right: 1em;
 }
 
+#small-nav li {
+    background: #39275b;
+    list-style: none;
+    border: 1px solid #d7a900;
+}
+
+#small-nav a {
+    margin-bottom: 3px;
+}
+
+#small-nav {
+    padding: 0;
+}
+
 nav li a { 
     display: inline-block;
     padding-right: 4px;
+}
+
+#small-nav li a {
+    margin-bottom: 2px;
+}
+
+nav li a, #small-nav li a {
     color: #C1C1D6;
     text-decoration: none;
 }
@@ -41,22 +65,18 @@ nav li a {
     width: 320px;
 }
 
-.color {
-    color: #fff;
-}
-
 .navbar-nav {
     display: none;
 }
 
 nav li a:hover, .active {
-	border-bottom: 3.5px solid #d7a900;
+    border-bottom: 3.5px solid #d7a900;
     color: white;
     text-decoration: none;
 }
 
 body {
-	background: #ebebeb;
+    background: #ebebeb;
 }
 
 #home {
@@ -102,11 +122,8 @@ iframe {
 .contact, .contact:hover {
     font-style: italic;
     text-decoration: none;
-
     color: #000000;
 }
-
-
 
 #imageGallery img  {
     display: inline-block;
@@ -122,6 +139,7 @@ iframe {
     padding-left: 7.5px;
 }
 
+
 #janet {
     width: 80%;
     margin-top: 10px;
@@ -129,6 +147,11 @@ iframe {
 
 #home {
     text-align: center;
+
+}
+
+.popup-nav {
+    display: none;
 }
 
 
@@ -136,46 +159,16 @@ iframe {
     #big-nav {
         display: none;
     }
-    /* 
-    do something with this
-    nav bar toggle thing
 
-    */
+    .navbar-toggle {
+        display: inline-block;
+    }
+
+    .glyphicon-th-list {
+        color: white;
+    }
 }
-
-#IUGA {
-    padding: 1em;
-}
-
-#Officers {
-    padding: 1em;
-}
-
-#Officers h3 {
-    font-size: 30px;
-    padding-left: 1em;
-}
-
-#Officers h4 {
-    font-size: 24px;
-}
-
-#Officers p {
-    font-size: 16px;
-}
-
-#IUGA p {
-    font-size: 16px;
-}
-
-/*display: inline-block;
-
-=======
->>>>>>> 67dc75b23fdb9cbfd8d3ab6e6426c864210b61be
->>>>>>> cde9fe7f571155686834d3a2029b5f436a6f16ad
 /*
-
 the gold: #d7a900;
 the purple: #39275b;
-
 */

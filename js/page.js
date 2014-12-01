@@ -1,5 +1,6 @@
 $(function() {
 	var url = window.location.href;
+	var clicked = false;
 
 	// if current URL is the URL of specific nav link
 	// give it new class
@@ -7,5 +8,22 @@ $(function() {
 		if (url == (this.href)) {
 			$(this).addClass("active");
 		}
-	})
+	});
+
+	// allows toggling of small navbar for mobile devices
+	$(".navbar-toggle").click(function() {
+		if (!clicked) {
+			$(".popup-nav").css("display", "block");
+		} else {
+			$(".popup-nav").css("display", "none");
+		}
+
+		clicked = !clicked;
+	});
+
+	$(window).resize(function() {
+		if ($(window).width() > 892) {
+			$(".popup-nav").css("display", "none");
+		}
+	});
 })
