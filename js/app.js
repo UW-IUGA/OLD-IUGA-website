@@ -1,15 +1,17 @@
 "use strict";
 
 angular.module('EventsApp', [])
-	.config(function($httpProvider) {
-
-	})
 	.controller('EventsController', function($scope, $http) {
 
+
+		// IUGA calendar ID and such
 		var eventsUrl = 'https://www.googleapis.com/calendar/v3';
 		var calendarId = 'uw.edu_frgfmv3c75mtqoaai92qeonhu8@group.calendar.google.com';
 		var key = 'AIzaSyCqN2adCmsc3ov72hoOy6GKseL1p1_JmJs';
 
+
+		// checks a given date and returns whether the date of an event 
+		// is in the future and returns that boolean value
 		$scope.checkDate = function(date) {
 			var eventDate = new Date(date);
 
@@ -22,21 +24,40 @@ angular.module('EventsApp', [])
 			var monthDiff = (eventDate.getUTCMonth() + 1) - month;
 			var dayDiff = eventDate.getDate() - day;
 			
-			return ((yearDiff > 0 || monthDiff > 0) || dayDiff >= 0);
+					
+			if (yearDiff <= 0 && monthDiff < 0) {
+				return false;
+			} else if (yearDiff > 0 || monthDiff > 0) {
+				return true;
+			} else {
+				return dayDiff >= 0;
+			}
+
 		};
 
+		// gets the current events 
 		$scope.getEvents = function() {
 			$http.get(eventsUrl + '/calendars/' + calendarId + '/events?key=' + key)
 				.success(function(data) {
+					
+					// storage for filtered events
 					var temp = [];
 
 					angular.forEach(data.items, function(value, key) {
+						
+						// two different date formats: date or datetime
+						// check both in if statement
 						if (value.start.date) {
+							// if it is a valid date in the future OR 
+							// it is a reoccuring event, add it to the temp
 							if ($scope.checkDate(value.start.date) || value.recurrence) {
 								
+								// format date into a nice format
 								var date = moment(value.start.date);
 								var momentDate = date.format("MMMM DD, YYYY");
 								
+								// push in a new object with the name, date
+								// and whether this event reoccurs
 								temp.push({
 									summary: value.summary,
 									day: momentDate,
@@ -44,13 +65,17 @@ angular.module('EventsApp', [])
 								});
 							}
 						} else if (value.start.dateTime) {
+
+							// if valid start date or reoccuring event, add to temp
 							if ($scope.checkDate(value.start.dateTime) || value.recurrence) {
 
+								// format date and time in a nice looking way
 								var date = moment(value.start.dateTime);
 								var momentTime = date.format("h:mm a")
 								var momentDay = date.format("MMMM DD, YYYY");
 								var dayOfWeek = date.format("dddd");
 
+								// push new object with all the event info
 								temp.push({
 									summary: value.summary,
 									day: momentDay,
@@ -62,6 +87,7 @@ angular.module('EventsApp', [])
 						}
 					})
 
+					// set events to filtered events
 					$scope.events = temp;
 				})
 				.error(function(err) {
@@ -69,8 +95,8 @@ angular.module('EventsApp', [])
 				});
 		};
 		
+		// on pageload, get the events
 		$scope.getEvents();
-
 	});
 
 

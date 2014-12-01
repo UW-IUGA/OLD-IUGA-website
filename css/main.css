@@ -16,7 +16,8 @@ nav {
     float: left;
     height: 2.8em;
 }
-nav ul {
+
+#big-nav {
     padding-top: .6em;
     margin-right: 320px;
 }
@@ -31,6 +32,7 @@ nav li a {
     display: inline-block;
     padding-right: 4px;
     color: #C1C1D6;
+    text-decoration: none;
 }
 
 #balance {
@@ -38,9 +40,18 @@ nav li a {
     width: 320px;
 }
 
+.color {
+    color: #fff;
+}
+
+.navbar-nav {
+    display: none;
+}
+
 nav li a:hover, .active {
 	border-bottom: 3.5px solid #d7a900;
     color: white;
+    text-decoration: none;
 }
 
 body {
@@ -76,8 +87,10 @@ iframe {
     margin-top: 0.5em;
 }
 
-li a, li a:hover {
+.contact, .contact:hover {
+    font-style: italic;
     text-decoration: none;
+
     color: #000000;
 }
 
@@ -88,6 +101,7 @@ li a, li a:hover {
     padding: 7.5px 7.5px 7.5px 7.5px;
 }
 
+
 #imageGallery h3 {
     background-color: #39275b;
     color: #ffffff;
@@ -96,9 +110,21 @@ li a, li a:hover {
     padding-left: 7.5px;
 }
 
+#janet {
+    width: 80%;
+    margin-top: 10px;
+}
+
+#home {
+    text-align: center;
+
+}
 
 
-@media(max-width: 750px) {
+@media(max-width: 892px) {
+    #big-nav {
+        display: none;
+    }
     /* 
     do something with this
     nav bar toggle thing
@@ -106,8 +132,11 @@ li a, li a:hover {
     */
 }
 
+
 /*display: inline-block;
 
+=======
+>>>>>>> 67dc75b23fdb9cbfd8d3ab6e6426c864210b61be
 /*
 
 the gold: #d7a900;

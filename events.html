@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<title>IUGA Events</title>
+		<title>iUGA Events</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -13,7 +13,7 @@
 	<body ng-app="EventsApp" ng-controller="EventsController">
 		<nav>
 			<img id="logo" src="img/logo.png">
-			<ul>
+			<ul id="big-nav">
 				<li><a href="home.html">home</a></li>
 				<li><a href="aboutus.html">about</a></li>
 				<li><a href="events.html">events</a></li>
@@ -30,15 +30,18 @@
 				</div>
 
 				<div class="col-md-6" id="search">
-					<input type="text" class="form-control" placeholder="search for events" ng-model="searchString">
+					<input type="text" class="form-control" placeholder="search for events by name, time, date, etc..." ng-model="searchString">
 					
 					<section>
 						<ul class="cards">
 							<li class="card" ng-repeat="event in filteredEvents = (events | filter: searchString)">
-								<p>{{event.summary}}<span ng-if="!event.recurr"> - {{event.day}}</span></p>
+								<p>
+									{{event.summary}}
+									<span ng-if="!event.recurr"> - {{event.dayWeek}}, {{event.day}}</span>
+									<span ng-if="event.recurr"> - Happens every {{event.dayWeek}}!</span>
+								</p>
 								
 								<p ng-if="event.time">Starts at {{event.time}}</p>
-								<p ng-if="event.recurr">This event occurs every {{event.dayWeek}}!</p>
 							</li>
 						</ul>
 					</section>
@@ -47,7 +50,7 @@
 		</main>
 
 		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-		<script src="js/check.js"></script>
+		<script src="js/page.js"></script>
 		<script src="js/moment.js"></script>
 		<script src="js/app.js"></script>
 	</body>
