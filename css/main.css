@@ -4,24 +4,32 @@ nav {
     padding: 0.5em;
     background: #d7a900;
     border-top: 5px solid #39275b;
+    height: 3em;
+    width: 100%;
 }
 
 nav ul {
-    padding-left: 0;
-    margin-bottom: 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 nav li {
-	text-align: center;
-    display: inline-block;
+
+    display: inline;
     list-style: none;
     margin-right: 1em;
-    width: 10%;
-    background: #eee;
 }
 
-nav li:hover {
-	border-bottom: 2px solid #39275b;
+nav li a { 
+    display: inline-block;
+    width: 10%;
+    background: #eee;
+
+}
+
+nav li a:hover, .active {
+	border-bottom: 3.5px solid #3770DC;
 }
 
 body {
@@ -30,7 +38,56 @@ body {
 
 iframe { 
     margin-top: 5px;
+
 }
+
+.col-md-6 {
+    margin-top: 2px;
+}
+
+#search {
+    margin-top: 4px;
+}
+
+.cards {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 0.5em;
+    border: 1px solid #CCC;
+    background-color: #EEE;
+    border-radius: 5px;
+    clear: both;
+    margin-top: 0.5em;
+}
+
+li a, li a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+#images li, img {
+    list-style-type: none;        
+    padding:0 0 0 0;
+    margin:0 0 0 0;
+}
+
+
+
+
+@media(max-width: 750px) {
+    /* 
+    do something with this
+    nav bar toggle thing
+
+    */
+}
+
 
 /*
 
