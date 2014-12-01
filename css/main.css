@@ -31,6 +31,7 @@ nav li a {
     display: inline-block;
     padding-right: 4px;
     color: #C1C1D6;
+    text-decoration: none;
 }
 
 #balance {
@@ -41,6 +42,7 @@ nav li a {
 nav li a:hover, .active {
 	border-bottom: 3.5px solid #d7a900;
     color: white;
+    text-decoration: none;
 }
 
 body {
@@ -76,9 +78,9 @@ iframe {
     margin-top: 0.5em;
 }
 
-li a, li a:hover {
+.contact, .contact:hover {
+    font-style: italic;
     text-decoration: none;
-    color: #000000;
 }
 
 
@@ -103,10 +105,6 @@ li a, li a:hover {
 
 #home {
     text-align: center;
-}
-
-a {
-    text-decoration: underline;
 }
 
 
