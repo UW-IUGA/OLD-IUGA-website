@@ -22,7 +22,15 @@ angular.module('EventsApp', [])
 			var monthDiff = (eventDate.getUTCMonth() + 1) - month;
 			var dayDiff = eventDate.getDate() - day;
 			
-			return ((yearDiff > 0 || monthDiff > 0) || dayDiff >= 0);
+					
+			if (yearDiff <= 0 && monthDiff < 0) {
+				return false;
+			} else if (yearDiff > 0 || monthDiff > 0) {
+				return true;
+			} else {
+				return dayDiff >= 0;
+			}
+
 		};
 
 		$scope.getEvents = function() {
@@ -61,7 +69,7 @@ angular.module('EventsApp', [])
 							} 
 						}
 					})
-
+					console.log(temp);
 					$scope.events = temp;
 				})
 				.error(function(err) {
