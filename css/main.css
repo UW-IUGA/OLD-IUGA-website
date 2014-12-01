@@ -10,13 +10,15 @@ nav {
     width: 100%;
     text-align: center;
     box-shadow: 0px 5px 5px rgba(0,0,0,0.1);
+    clear: both;
 }
 
 #logo {
     float: left;
     height: 2.8em;
 }
-nav ul {
+
+#big-nav {
     padding-top: .6em;
     margin-right: 320px;
 }
@@ -37,6 +39,14 @@ nav li a {
 #balance {
     float: right;
     width: 320px;
+}
+
+.color {
+    color: #fff;
+}
+
+.navbar-nav {
+    display: none;
 }
 
 nav li a:hover, .active {
@@ -92,19 +102,53 @@ iframe {
 .contact, .contact:hover {
     font-style: italic;
     text-decoration: none;
-}
 
-
-#images li, img {
-    list-style-type: none;        
-    padding:0 0 0 0;
-    margin:0 0 0 0;
+    color: #000000;
 }
 
 
 
+#imageGallery img  {
+    display: inline-block;
+    padding: 7.5px 7.5px 7.5px 7.5px;
+}
 
-@media(max-width: 750px) {
+
+#imageGallery h3 {
+    background-color: #39275b;
+    color: #ffffff;
+    border: 2px;
+    border-radius: 5px;
+    padding-left: 7.5px;
+}
+
+<<<<<<< HEAD
+||||||| merged common ancestors
+#janet {
+    width: 80%;
+    margin-top: 10px;
+}
+
+#home {
+    text-align: center;
+}
+
+=======
+#janet {
+    width: 80%;
+    margin-top: 10px;
+}
+
+#home {
+    text-align: center;
+
+}
+
+
+@media(max-width: 892px) {
+    #big-nav {
+        display: none;
+    }
     /* 
     do something with this
     nav bar toggle thing
@@ -112,7 +156,12 @@ iframe {
     */
 }
 
+>>>>>>> 6022bf3659a0ac60926df35774666ad233dfad6a
 
+/*display: inline-block;
+
+=======
+>>>>>>> 67dc75b23fdb9cbfd8d3ab6e6426c864210b61be
 /*
 
 the gold: #d7a900;
