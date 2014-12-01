@@ -7,20 +7,29 @@ function displayPhotoAlbum(photos) {
 		//get photos album 
 		var htmlString ='';
 
-		var albumHTML = '<h3 class="col-md-12" col-sm-12 col-lg-12>' + photos[1].albumName + '</h3>';
+		var albumId= photos[1].albumName.charAt(0);
+		var albumString = '<p id= "' + albumId  + '"> </p>'; 
+		$('#imageGallery').append(albumString);
+		var headerString = "<h3>" + photos[1].albumName + "</h3>";
+		$('#' + albumId).append(headerString);
 		//label album
-		$('#images').append(albumHTML);
+		
 		//for each photo in the album
+		var imgStrings ='';
 
 		for (var idx = 0; idx < photos.length; idx++) {
 			//get image src
 			var imageSrc = 'https://farm' + photos[idx].farm + '.staticflickr.com/' + photos[idx].server
-			+ '/' + photos[idx].id + '_' + photos[idx].secret + '.jpg';
-			htmlString = '<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"> <img class="img-responsive" src=' + imageSrc + ' alt="' + photos[idx].id + '"> </li>';
+			+ '/' + photos[idx].id + '_' + photos[idx].secret +  '_q.jpg';
+			imgStrings = imgStrings+ '<img class="img-responsive" src="' + imageSrc + ' " alt="' + photos[idx].id + '">';
 			//append li element to ul
-			$('#images').append(htmlString);
-		}
+			
+		};
+		$('#' + albumId).append(imgStrings);
+}
 
+function openPhoto() {
+	
 }
 
 	var apiKey = '769390df99785d3372c1709fa68e6edc';
@@ -65,7 +74,5 @@ function displayPhotoAlbum(photos) {
 		}); 
 	// end of json
 }); //end of document ready
-
-
 
 
