@@ -16,7 +16,8 @@ nav {
     float: left;
     height: 2.8em;
 }
-nav ul {
+
+#big-nav {
     padding-top: .6em;
     margin-right: 320px;
 }
@@ -36,6 +37,14 @@ nav li a {
 #balance {
     float: right;
     width: 320px;
+}
+
+.color {
+    color: #fff;
+}
+
+.navbar-nav {
+    display: none;
 }
 
 nav li a:hover, .active {
@@ -78,7 +87,7 @@ iframe {
 
 li a, li a:hover {
     text-decoration: none;
-    color: #000000;
+    /*color: #000000;*/
 }
 
 
@@ -88,16 +97,6 @@ li a, li a:hover {
     margin:0 0 0 0;
 }
 
-
-
-
-@media(max-width: 750px) {
-    /* 
-    do something with this
-    nav bar toggle thing
-
-    */
-}
 
 #janet {
     width: 80%;
@@ -112,6 +111,18 @@ a {
     text-decoration: underline;
 }
 
+
+
+@media(max-width: 892px) {
+    #big-nav {
+        display: none;
+    }
+    /* 
+    do something with this
+    nav bar toggle thing
+
+    */
+}
 
 /*
 
