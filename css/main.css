@@ -85,7 +85,7 @@ body {
 }
 
 #home-photo {
-    width: 70%;
+    width: 76%;
     margin: 0;
     margin-top: 10px;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
@@ -140,12 +140,6 @@ iframe {
     padding-left: 7.5px;
 }
 
-
-#janet {
-    width: 80%;
-    margin-top: 10px;
-}
-
 #home {
     text-align: center;
 
@@ -154,7 +148,6 @@ iframe {
 .popup-nav {
     display: none;
 }
-
 
 @media(max-width: 1000px) {
     #big-nav {
@@ -168,11 +161,20 @@ iframe {
     .glyphicon-th-list {
         color: white;
     }
+
+    #Officers img {
+        width: 220px;
+        margin-right: 1em;
+    }
 }
 
 h1 {
+    background-color: #d7a900;
+    text-indent: 15px;    
     font-weight: bold;
+    font-size: 35px;
 }
+
 /*
 the gold: #d7a900;
 the purple: #39275b;
