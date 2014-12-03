@@ -44,7 +44,7 @@ angular.module('EventsApp', [])
 					var temp = [];
 
 					angular.forEach(data.items, function(value, key) {
-						
+
 						// two different date formats: date or datetime
 						// check both in if statement
 						if (value.start.date) {
@@ -61,7 +61,8 @@ angular.module('EventsApp', [])
 								temp.push({
 									summary: value.summary,
 									day: momentDate,
-									recurr: value.recurrence ? true : false
+									recurr: value.recurrence ? true : false,
+									location: value.location ? value.location : "TBD"
 								});
 							}
 						} else if (value.start.dateTime) {
@@ -81,12 +82,13 @@ angular.module('EventsApp', [])
 									day: momentDay,
 									time: momentTime,
 									dayWeek: dayOfWeek,
-									recurr: value.recurrence ? true : false
+									recurr: value.recurrence ? true : false,
+									location: value.location ? value.location : "TBD"
 								});
 							} 
 						}
 					})
-
+					console.log(temp);
 					// set events to filtered events
 					$scope.events = temp;
 				})
