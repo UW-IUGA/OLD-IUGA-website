@@ -32,7 +32,7 @@ function displayPhotoAlbum(photos) {
 			rel: albumId,
 			transition: 'elastic',	
 			preloading: true,
-			arrowKey: 'true',
+			arrowKey: true,
 			closeButton: true,
 			iFrame: true
 		});
