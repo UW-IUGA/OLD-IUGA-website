@@ -4,33 +4,36 @@
 $(document).ready(function(){
 
 function displayPhotoAlbum(photos) {	
-		//get photos album 
 		var htmlString ='';
 
+		//build and append html for album p element
 		var albumId= photos[1].albumName.charAt(0);
-		var albumString = '<p id= "' + albumId  + '"> </p>'; 
+		var albumString = '<p class= "' + albumId  + '"> </p>'; 
 		$('#imageGallery').append(albumString);
+		//build and append html for album header element
 		var headerString = "<h3>" + photos[1].albumName + "</h3>";
-		$('#' + albumId).append(headerString);
-		//label album
+		$('.' + albumId).append(headerString);
 		
-		//for each photo in the album
+		//build html string for each photo
 		var imgStrings ='';
-
 		for (var idx = 0; idx < photos.length; idx++) {
 			//get image src
 			var imageSrc = 'https://farm' + photos[idx].farm + '.staticflickr.com/' + photos[idx].server
 			+ '/' + photos[idx].id + '_' + photos[idx].secret +  '_q.jpg';
-			imgStrings = imgStrings+ '<img class="img-responsive" src="' + imageSrc + ' " alt="' + photos[idx].id + '">';
-			//append li element to ul
+			var bigImageSrc = imageSrc.replace('_q', '_z');
+			//create img element
+			imgStrings = imgStrings + '<a href ="' + bigImageSrc + '"class="' + albumId + '"> <img class="img-responsive" src="' + imageSrc + '" alt="' + photos[idx].albumName + '"> </a>';
 			
 		};
-		$('#' + albumId).append(imgStrings);
+		//append all photo html strings to album 
+		$('.' + albumId).append(imgStrings);
+		//intialize colorbox (image popup functionality) on each album
+		$('a.' + albumId).colorbox({
+			rel: albumId,
+			transition: 'elastic',	
+		});
 }
 
-function openPhoto() {
-	
-}
 
 	var apiKey = '769390df99785d3372c1709fa68e6edc';
 	var userId= '129665272@N05';
