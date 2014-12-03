@@ -53,13 +53,17 @@
 					<section>
 						<ul class="cards">
 							<li class="card" ng-repeat="event in filteredEvents = (events | filter: searchString)">
+								<img src="img/android.jpg" float="right" width="20%">
+								<p class="card-heading">{{event.summary}}</p>
+
 								<p>
-									{{event.summary}}
-									<span ng-if="!event.recurr"> - {{event.dayWeek}}, {{event.day}}</span>
-									<span ng-if="event.recurr"> - Happens every {{event.dayWeek}}!</span>
+									<span ng-if="!event.recurr">{{event.dayWeek}}, {{event.day}}</span>
+									<span ng-if="event.recurr">Happens every {{event.dayWeek}}!</span>
 								</p>
 								
-								<p ng-if="event.time">Starts at {{event.time}}</p>
+								<p ng-if="event.time">Starts at {{event.time}} @ {{event.location}}</p>
+
+
 							</li>
 						</ul>
 					</section>

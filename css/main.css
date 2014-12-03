@@ -184,12 +184,32 @@ iframe {
     }
 }
 
+#stephen {
+    display: block;
+}
+
 h1 {
     background-color: #d7a900;
     text-indent: 15px;    
     font-weight: bold;
     font-size: 35px;
 }
+
+.card-heading {
+    font-size: 200%;
+    margin: 0;
+}
+
+li img {
+    float: right;
+    display: inline;
+    width: 20%;
+}
+
+.card {
+    overflow: hidden;
+}
+
 /*
 the gold: #d7a900;
 the purple: #39275b;
