@@ -194,6 +194,22 @@ h1 {
     font-weight: bold;
     font-size: 35px;
 }
+
+.card-heading {
+    font-size: 200%;
+    margin: 0;
+}
+
+li img {
+    float: right;
+    display: inline;
+    width: 20%;
+}
+
+.card {
+    overflow: hidden;
+}
+
 /*
 the gold: #d7a900;
 the purple: #39275b;
