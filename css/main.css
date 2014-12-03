@@ -184,6 +184,10 @@ iframe {
     }
 }
 
+#stephen {
+    display: block;
+}
+
 h1 {
     background-color: #d7a900;
     text-indent: 15px;    
