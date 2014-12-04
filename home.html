@@ -38,36 +38,42 @@
 		</section>
 
 		
-		<div class="col-md-4 col-sm-12" id="search">
-			<input type="text" class="form-control" placeholder="search for events by name, time, date, etc..." ng-model="searchString">
-				
-			<section>
-				<ul class="cards">
-					<li class="card" ng-repeat="event in filteredEvents = (events | filter: searchString)">
-						<img src="img/android.jpg">
-						<p class="card-heading">{{event.summary}}</p>
+		<div class="col-md-4 col-sm-12">
+			<div class="homebox homesearch">
+				<a href="events.html" class="homelink"><h3 class="homeh3">Future Events</h3></a>
+				<input type="text" class="form-control" placeholder="search for events by name, time, date, etc..." ng-model="searchString">
+					
+				<section>
+					<ul class="cards">
+						<li class="card" ng-repeat="event in filteredEvents = (events | filter: searchString)">
+							<img src="img/android.jpg">
+							<p class="card-heading">{{event.summary}}</p>
 
-						<p>
-							<span ng-if="!event.recurr">{{event.dayWeek}}, {{event.day}}</span>
-							<span ng-if="event.recurr">Happens every {{event.dayWeek}}!</span>
-						</p>
-								
-						<p ng-if="event.time">Starts at {{event.time}} @ {{event.location}}</p>
-					</li>
-				</ul>
-			</section>
+							<p>
+								<span ng-if="!event.recurr">{{event.dayWeek}}, {{event.day}}</span>
+								<span ng-if="event.recurr">Happens every {{event.dayWeek}}!</span>
+							</p>
+									
+							<p ng-if="event.time">Starts at {{event.time}} @ {{event.location}}</p>
+						</li>
+					</ul>
+				</section>
+			</div>
 		</div>
 
-		<div class='col-md-4 col-sm-12' id='eventPhotos'>
-			
-			<a href="photos.html"><h3>Check out some recent IUGA photos!</h3></a>
-			<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=6&display=latest&size=m&layout=x&source=user&user=129665272@N05"></script>
-		
+		<div class='col-md-4 col-sm-12'>
+			<div class="homebox">
+				<a href="photos.html" class="homelink"><h3 class="homeh3">Check out some recent IUGA photos</h3></a>
+				<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=6&display=latest&size=m&layout=x&source=user&user=129665272@N05"></script>
+			</div>
 		</div>
 
-		<div class='col-md-4 col-sm-12', id='twitter'>
-			<a class="twitter-timeline" href="https://twitter.com/IUGAuw" data-widget-id="540350608364933120">Tweets by @IUGAuw</a>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<div class='col-md-4 col-sm-12'>
+			<div class="homebox">
+				<a href="https://twitter.com/IUGAuw" class="homelink"><h3 class="homeh3">Visit our Twitter</h3></a>
+				<a class="twitter-timeline" href="https://twitter.com/IUGAuw" data-widget-id="540350608364933120">Tweets by @IUGAuw</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</div>
 		</div>
 
 		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
