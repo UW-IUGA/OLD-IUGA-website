@@ -105,7 +105,7 @@ body {
 }
 
 #home-photo {
-    width: 74%;
+    width: 60%;
     margin: 0;
     margin-bottom: 1em;
     margin-top: 10px;
@@ -200,6 +200,9 @@ iframe {
     #Officers img {
         width: 220px;
         margin-right: 1em;
+    }
+    #home-photo {
+        width: 90%;
     }
 }
 
