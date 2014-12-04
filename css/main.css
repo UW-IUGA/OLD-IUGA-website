@@ -118,16 +118,18 @@ body {
     width: 100%;
     height: 100%;
 
+
 }
 
 .flickr_badge_image {
-    width:45%;
-    height: 45%;
+    width:50%;
+    height: 50%;
     display: inline-block;
 }
 
 #eventPhotos h3 {
     margin: 0;
+    text-align: center;
 }
 
 iframe { 
