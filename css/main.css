@@ -22,6 +22,10 @@ nav {
 
 h1 {
     margin-top: 2.3em;
+    background-color: #d7a900;
+    text-indent: 15px;    
+    font-weight: bold;
+    font-size: 35px;
 }
 
 #home {
@@ -93,6 +97,7 @@ nav li a:hover, .active {
 body {
     background: #ebebeb;
     font-family: 'PT Sans', sans-serif;
+    font-size: 175%;
 }
 
 #home {
@@ -102,12 +107,27 @@ body {
 #home-photo {
     width: 74%;
     margin: 0;
+    margin-bottom: 1em;
     margin-top: 10px;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
 }
 
+#eventPhotos img {
+    display:block;
+    padding: .25em;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#eventPhotos h3 {
+    margin: 0;
+}
+
+
+
 iframe { 
     margin-top: 5px;
+
 
 }
 
@@ -147,7 +167,6 @@ iframe {
     z-index: -1;
 }
 
-
 #imageGallery h3 {
     background-color: #39275b;
     color: #ffffff;
@@ -184,16 +203,6 @@ iframe {
     }
 }
 
-#stephen {
-    display: block;
-}
-
-h1 {
-    background-color: #d7a900;
-    text-indent: 15px;    
-    font-weight: bold;
-    font-size: 35px;
-}
 
 .card-heading {
     font-size: 200%;
