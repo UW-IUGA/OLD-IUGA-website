@@ -244,6 +244,14 @@ li img {
 .homeh3 {
     margin-top: -5px;
 }
+
+#aboutus h2 {
+     background-color: #39275b;
+    color: #ffffff;
+    border: 2px;
+    border-radius: 5px;
+    padding-left: 7.5px;
+}
 /*
 the gold: #d7a900;
 the purple: #39275b;
