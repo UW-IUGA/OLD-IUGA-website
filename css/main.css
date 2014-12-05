@@ -231,7 +231,7 @@ li img {
 }
 
 .officer, .other-about {
-    border-top: 3px solid #d7a900;
+    border-top: 4px solid #d7a900;
     margin-right: 5px;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
     padding: 10px;
