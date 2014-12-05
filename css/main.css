@@ -230,8 +230,8 @@ li img {
     margin-bottom: 10px;
 }
 
-.officer {
-    border-top: 15px solid #d7a900;
+.officer, .other-about {
+    border-top: 3px solid #d7a900;
     margin-right: 5px;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
     padding: 10px;
