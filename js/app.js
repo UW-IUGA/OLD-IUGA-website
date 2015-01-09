@@ -6,7 +6,7 @@ angular.module('EventsApp', [])
 
 		// IUGA calendar ID and such
 		var eventsUrl = 'https://www.googleapis.com/calendar/v3';
-		var calendarId = 'uw.edu_frgfmv3c75mtqoaai92qeonhu8@group.calendar.google.com';
+		var calendarId = 'uw.edu_frgfmv3c75mtqoaai92qeonhu8%40group.calendar.google.com';
 		var key = 'AIzaSyCqN2adCmsc3ov72hoOy6GKseL1p1_JmJs';
 
 
@@ -25,7 +25,7 @@ angular.module('EventsApp', [])
 			var dayDiff = eventDate.getDate() - day;
 			
 					
-			if (yearDiff <= 0 && monthDiff < 0) {
+			if (yearDiff < 0 || monthDiff < 0) {
 				return false;
 			} else if (yearDiff > 0 || monthDiff > 0) {
 				return true;
@@ -51,11 +51,10 @@ angular.module('EventsApp', [])
 							// if it is a valid date in the future OR 
 							// it is a reoccuring event, add it to the temp
 							if ($scope.checkDate(value.start.date) || value.recurrence) {
-								
+
 								// format date into a nice format
 								var date = moment(value.start.date);
 								var momentDate = date.format("MMMM DD, YYYY");
-								
 								// push in a new object with the name, date
 								// and whether this event reoccurs
 								temp.push({
@@ -75,7 +74,6 @@ angular.module('EventsApp', [])
 								var momentTime = date.format("h:mm a")
 								var momentDay = date.format("MMMM DD, YYYY");
 								var dayOfWeek = date.format("dddd");
-
 								// push new object with all the event info
 								temp.push({
 									summary: value.summary,
