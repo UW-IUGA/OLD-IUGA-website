@@ -9,8 +9,8 @@ nav, #small-nav {
 }
 
 nav {
-    background: #39275b;
-    border-top: 5px solid #d7a900; 
+    background: white;
+    border-top: 5px solid #39275b; 
     box-shadow: 0px 5px 5px rgba(0,0,0,0.2); 
     padding: 0.2em;
     height: 3.5em;
@@ -75,7 +75,7 @@ nav li a {
 }
 
 nav li a, #small-nav li a {
-    color: #C1C1D6;
+    color: #39275b;
     text-decoration: none;
 }
 
@@ -90,7 +90,7 @@ nav li a, #small-nav li a {
 
 nav li a:hover, .active {
     border-bottom: 3.5px solid #d7a900;
-    color: white;
+    color: #d7a900;
     text-decoration: none;
 }
 
@@ -220,7 +220,7 @@ li img {
 }
 
 .homebox {
-    border-top: 15px solid #d7a900;
+    border-top: 15px solid #39275b;
     margin-right: 5px;
     text-align: center;
     background-color: #FFFFFF;
@@ -249,6 +249,10 @@ li img {
 }
 .homeh3 {
     margin-top: -5px;
+}
+
+.floater {
+    float: right;
 }
 
 #aboutus h2 {
