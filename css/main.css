@@ -50,9 +50,11 @@ nav li {
 }
 
 #small-nav li {
-    background: #39275b;
+    background: #ebebeb;
     list-style: none;
-    border: 1px solid #d7a900;
+    border: 1px solid #39275b;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 #small-nav a {
