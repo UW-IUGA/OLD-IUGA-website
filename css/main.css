@@ -13,7 +13,7 @@ nav {
     border-top: 5px solid #39275b; 
     box-shadow: 0px 5px 5px rgba(0,0,0,0.2); 
     padding: 0.2em;
-    height: 3.5em;
+    height: 4.5em;
     overflow: hidden;
     position: fixed;
     z-index: 1;
@@ -21,7 +21,7 @@ nav {
 }
 
 h1 {
-    margin-top: 2.3em;
+    margin-top: 3em;
     background-color: #39275b;
     text-indent: 15px;    
     font-weight: bold;
@@ -30,17 +30,19 @@ h1 {
 }
 
 #home {
-    margin-top: 4.5em;
+    margin-top: 5em;
 }
 
 #logo {
     float: left;
-    height: 2.8em;
+    height: 4em;
+    padding: 10px;
 }
 
 #big-nav {
-    padding-top: .6em;
-    margin-right: 320px;
+    padding-top: 1em;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 nav li {
