@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans);
-
-nav, #small-nav {
+nav,
+#small-nav {
     font-size: 125%;
     font-family: 'PT Sans', sans-serif;
     width: 100%;
@@ -10,8 +10,8 @@ nav, #small-nav {
 
 nav {
     background: white;
-    border-top: 5px solid #39275b; 
-    box-shadow: 0px 5px 5px rgba(0,0,0,0.2); 
+    border-top: 5px solid #39275b;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
     padding: 0.2em;
     height: 4.5em;
     overflow: hidden;
@@ -23,7 +23,7 @@ nav {
 h1 {
     margin-top: 3em;
     background-color: #39275b;
-    text-indent: 15px;    
+    text-indent: 15px;
     font-weight: bold;
     font-size: 35px;
     color: white;
@@ -70,7 +70,7 @@ nav li {
     padding: 0;
 }
 
-nav li a { 
+nav li a {
     display: inline-block;
     padding-right: 4px;
 }
@@ -79,7 +79,8 @@ nav li a {
     margin-bottom: 2px;
 }
 
-nav li a, #small-nav li a {
+nav li a,
+#small-nav li a {
     color: #39275b;
     text-decoration: none;
 }
@@ -93,7 +94,8 @@ nav li a, #small-nav li a {
     display: none;
 }
 
-nav li a:hover, .active {
+nav li a:hover,
+.active {
     border-bottom: 3.5px solid #d7a900;
     color: #d7a900;
     text-decoration: none;
@@ -114,7 +116,7 @@ body {
     margin: 0;
     margin-bottom: 20px;
     margin-top: 15px;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 #eventPhotos img {
@@ -125,7 +127,7 @@ body {
 }
 
 .flickr_badge_image {
-    width:50%;
+    width: 50%;
     height: 50%;
     display: inline-block;
 }
@@ -134,7 +136,6 @@ body {
     margin: 0;
     text-align: center;
 }
-
 
 .col-md-6 {
     margin-top: 2px;
@@ -160,13 +161,14 @@ body {
     margin-top: 0.5em;
 }
 
-.contact, .contact:hover {
+.contact,
+.contact:hover {
     font-style: italic;
     text-decoration: none;
     color: #000000;
 }
 
-#imageGallery img  {
+#imageGallery img {
     display: inline-block;
     padding: 7.5px 7.5px 7.5px 7.5px;
     z-index: -1;
@@ -182,7 +184,6 @@ body {
 
 #home {
     text-align: center;
-
 }
 
 .popup-nav {
@@ -193,21 +194,16 @@ body {
     #big-nav {
         display: none;
     }
-
     .navbar-toggle {
         display: inline-block;
     }
-
     .glyphicon-th-list {
         color: #39275b;
     }
-
-   
     #home-photo {
         width: 90%;
     }
 }
-
 
 .card-heading {
     font-size: 200%;
@@ -229,21 +225,23 @@ li img {
     margin-right: 5px;
     text-align: center;
     background-color: #FFFFFF;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 10px;
 }
 
-.officer, .other-about {
+.officer,
+.other-about {
     border-top: 4px solid #39275b;
     margin-right: 5px;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     padding: 10px;
     margin-bottom: 20px;
     margin-bottom: 20px;
     background-color: #FFFFFF;
 }
+
 .homesearch {
     padding-left: 15px;
     padding-right: 15px;
@@ -252,6 +250,7 @@ li img {
 .homelink {
     color: #39275b;
 }
+
 .homeh3 {
     margin-top: -5px;
 }
@@ -268,8 +267,9 @@ li img {
     padding-left: 7.5px;
 }
 
+
 /* Responsive iFrame */
- 
+
 .responsive-iframe-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -277,9 +277,9 @@ li img {
     height: 0;
     overflow: hidden;
 }
- 
-.responsive-iframe-container iframe,   
-.vresponsive-iframe-container object,  
+
+.responsive-iframe-container iframe,
+.vresponsive-iframe-container object,
 .vresponsive-iframe-container embed {
     position: absolute;
     top: 0;
@@ -288,7 +288,9 @@ li img {
     height: 100%;
 }
 
+
 /*
 the gold: #d7a900;
 the purple: #39275b;
+
 */
