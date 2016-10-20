@@ -17,9 +17,9 @@
         <a href="/"><img id="logo" src="./img/IUGA-Logotype.jpg"></a>
         <ul id="big-nav">
             <li><a href="/">home</a></li>
-            <li><a href="aboutus.html">about</a></li>
-            <li><a href="events.html">events</a></li>
-            <li><a href="photos.html">photos</a></li>
+            <li><a href="aboutus.php">about</a></li>
+            <li><a href="events.php">events</a></li>
+            <li><a href="photos.php">photos</a></li>
         </ul>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><span class="glyphicon glyphicon-th-list"></span></button>
     </nav>
@@ -28,9 +28,9 @@
 
         <ul id="small-nav">
             <li><a href="/">home</a></li>
-            <li><a href="aboutus.html">about</a></li>
-            <li><a href="events.html">events</a></li>
-            <li><a href="photos.html">photos</a></li>
+            <li><a href="aboutus.php">about</a></li>
+            <li><a href="events.php">events</a></li>
+            <li><a href="photos.php">photos</a></li>
         </ul>
 
     </div>
@@ -38,30 +38,6 @@
     <section id="home">
         <img id="home-photo" src="img/officers/2016/home-image.jpg">
     </section>
-
-
-    <!--<div class="col-md-8 col-sm-12">
-			<div class="homebox homesearch">
-				<a href="events.html" class="homelink"><h3 class="homeh3">Future Events</h3></a>
-				<input type="text" class="form-control" placeholder="search for events by name, time, date, etc..." ng-model="searchString">
-
-				<section>
-					<ul class="cards">
-						<li class="card" ng-repeat="event in filteredEvents = (events | filter: searchString)">
-							<img src="img/android.jpg">
-							<p class="card-heading">{{event.summary}}</p>
-
-							<p>
-								<span ng-if="!event.recurr">{{event.dayWeek}}, {{event.day}}</span>
-								<span ng-if="event.recurr">Happens every {{event.dayWeek}}!</span>
-							</p>
-
-							<p ng-if="event.time">Starts at {{event.time}} @ {{event.location}}</p>
-						</li>
-					</ul>
-				</section>
-			</div>
-		</div>-->
 
 
     <div class="container">
