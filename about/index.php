@@ -140,7 +140,7 @@
 
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                         <div class="officer">
-                            <p><img alt="Brad" class="img-responsive" src="https://www.gravatar.com/avatar/c4f182933dfd04a4984ef7e009e858d1?s=1000" /></p>
+                            <p><img alt="Brad" class="img-responsive" src="../assets/img/officers/2016/Brad_Holland.jpg" /></p>
 
                             <h3>Brad Holland</h3>
 
