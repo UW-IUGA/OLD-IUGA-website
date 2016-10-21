@@ -1,5 +1,5 @@
 <?php
-    function shared_header($path, $title) {
+    function shared_header($path, $title = "IUGA") {
 ?>
 <!doctype html>
 <html lang="en">
@@ -44,7 +44,7 @@
 
 <?php
     }
-    function shared_footer($path, $extra) {
+    function shared_footer($path, $extra = "") {
 ?>
 
     <footer>
