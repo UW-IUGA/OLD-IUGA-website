@@ -5,7 +5,7 @@ $(function() {
 	// if current URL is the URL of specific nav link
 	// give it new class
 	$("nav ul li a").each(function() {
-		if (url == (this.href)) {
+		if (url === (this.href) || url.substring(0, url.length - 1) === (this.href) || url === (this.href.substring(0, url.length - 1))) {
 			$(this).addClass("active");
 		}
 	});
