@@ -6,7 +6,7 @@ angular.module('EventsApp', [])
 
 		// IUGA calendar ID and such
 		var eventsUrl = 'https://www.googleapis.com/calendar/v3';
-		var calendarId = 'uw.edu_frgfmv3c75mtqoaai92qeonhu8%40group.calendar.google.com';
+		var calendarId = 'uw.edu_neh0b0p4hso7ot07e5bnbimq8k%40group.calendar.google.com';
 		var key = 'AIzaSyCqN2adCmsc3ov72hoOy6GKseL1p1_JmJs';
 
 
