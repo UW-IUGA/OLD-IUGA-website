@@ -80,12 +80,13 @@
                                 The Vice President fills roles as needed and has core repsonsibilities with which they are entrusted. These core responsibilities include the following.
                                 <ul>
                                     <li>Backup for the President</li>
-                                    <li>Work with the Director of Outreach when communicating with External Groups</li>
-                                    <li>Responsible for the meeting minutes of every IUGA meeting</li>
-                                    <li>Responsible for scheduling the weekly meetings and maintaining the calendar of events</li>
+                                    <li>Collaborates with the Director of Outreach when communicating with External Groups</li>
+                                    <li>Responsible for scheduling bi-weekly meetings</li>
+                                    <li>Responsible for booking venues for all IUGA events</li>
                                     <li>Responsible for handling the yearly Registration of IUGA with the SAO</li>
+                                    <li>Responsible for the meeting minutes of every IUGA meeting</li>
                                     <li>Act as the Primary Point of Contact for Student Services when dealing with the Informatics Recruitment Process</li>
-                                    <li>Fulfill or Designate a student to fill a seat on the iSchool Student Leadership Committee</li>
+                                    <li>Fulfill or Designate a student to fill a seat on the iSchool Student Leadership Committee and the Informatics Program Committee</li>
                                 </ul>
                             </p>
                         </div>
