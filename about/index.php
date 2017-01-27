@@ -161,7 +161,7 @@
 
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                         <div class="officer">
-                            <p><img alt="Natasha" class="img-responsive" src="../assets/img/officers/2016/Natasha_Dietzler.jpg" /></p>
+                            <p><img alt="Natasha" class="img-responsive" src="https://www.gravatar.com/avatar/1201397bcbfe3da7c242070a35b47faa?s=1000" /></p>
 
                             <h3>Natasha Dietzler</h3>
 
