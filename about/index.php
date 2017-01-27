@@ -119,7 +119,7 @@
 
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                         <div class="officer">
-                            <p><img alt="Jenna" class="img-responsive" src="https://www.gravatar.com/avatar/c684d93a8be8840b75d30fff55780778?s=1000" /></p>
+                            <p><img alt="Jenna" class="img-responsive" src="https://www.gravatar.com/avatar/beb353c0f356b4ab09a152ca9fe3f7f2?s=1000" /></p>
 
                             <h3>Jenna Han</h3>
 
