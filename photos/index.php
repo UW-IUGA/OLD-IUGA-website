@@ -1,6 +1,6 @@
 <?php
     include_once('../shared.php');
-    shared_header('../', 'IUGA Photos');
+    shared_header('../', 'Photos');
 ?>
 
     <main>
