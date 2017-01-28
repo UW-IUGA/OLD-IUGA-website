@@ -208,9 +208,13 @@
 
                             <p>The director of Information Technology helps run the Association&rsquo;s technology projects and online presence. While providing support when needed. This is done by doing the following:
                                 <ul>
-                                    <li>Organize of Delegate the maintainance of the IUGA Website</li>
-                                    <li>Be empowered to create a web team/committee</li>
-                                    <li>Take charge of the technical aspects of events, including, but not limited to, Game Night</li>
+                                    <li>Maintain and update the IUGA Website and associated websites using the latest web technologies.</li>
+                                    <li>Monitor and maintain the IUGA gaming servers and associated assets.</li>
+                                    <li>Maintain all IUGA online account credentials in a secure and scalable system.</li>
+                                    <li>Manage permissions and security settings for IUGA assets across social networks and collaborative systems.</li>
+                                    <li>Oversee and run technology aspects of IUGA events, including the quarterly Game Night.</li>
+                                    <li>Work closely with iSchool IT and the Administration to connect the student body with all available technology and services.</li>
+                                    <li>Support, Service, and Create Technology solutions for needs within the Association and the iSchool.</li>
                                 </ul>
                             </p>
                         </div>
