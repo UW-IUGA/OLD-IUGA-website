@@ -1,16 +1,24 @@
 <?php
-    function shared_header($path, $title = "IUGA") {
+    function shared_header($path, $title) {
 ?>
 <!doctype html>
 <html lang="en">
 
 <head>
-    <title><?= $title ?></title>
+    <title>IUGA | <?= $title ?></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= $path ?>assets/css/main.css" />
     <link rel="icon" href="<?= $path ?>assets/img/logo.ico">
+
+    <!-- Open Graph Data -->
+    <meta property="og:title" content="IUGA | <?= $title ?>"/>
+    <meta property="og:site_name" content="Informatics Undergraduate Association (IUGA) "/>
+    <meta property="og:description" content="The Informatics Undergraduate Association (IUGA) is a Registered Student Organization that functions as a student government for Informatics students."/>
+    <meta property="og:image" content="http://iuga.info/assets/img/officers/2016/home-image.jpg"/>
+    <meta property="og:type" content="school"/>
+
 </head>
 
 <body>

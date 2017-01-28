@@ -1,12 +1,12 @@
 <?php
     include_once('../shared.php');
-    shared_header('../', 'iUGA Events');
+    shared_header('../', 'Events');
 ?>
 
 	<main ng-app="EventsApp" ng-controller="EventsController">
 
 		<div class="container">
-			
+
 		    <div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			    <h2>IUGA calendar of Events</h2>
