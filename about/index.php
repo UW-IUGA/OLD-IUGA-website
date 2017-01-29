@@ -190,9 +190,13 @@
 
                             <p>The Director of Diversity Efforts works to promote diversity both within the major and the iSchool. This includes, but is not limited to, the following:
                                 <ul>
-                                    <li>Responsible for organizing and promoting events relating to diversity</li>
-                                    <li>Works with Student Services and other Student Organizations to coordinate diversity events and programs</li>
-                                    <li>Fulfill, or appoint a student, to sit on the Informatics Admissions Committee during the Summer</li>
+                                    <li>Support and promote activist-oriented RSOs</li>
+                                    <li>Organize and promote diversity and inclusion events for the iSchool</li>
+                                    <li>Work closely with the Diversity Programs Advisor to ideate and execute diversity initiatives</li>
+                                    <li>Support and engage in an active Diversity Committee composed of students, faculty and staff</li>
+                                    <li>Fulfill, or appoint a student, to sit on the Informatics Admissions Committee during the summer</li>
+                                    <li>Ensure that the events, ideas, and products of IUGA are made with the thought of diversity and inclusion</li>
+                                    <li>Collaborate with Student Services and other Registered Student Organizations(RSOs) on campus for diversity and inclusion events</li>
                                 </ul>
                             </p>
                         </div>
