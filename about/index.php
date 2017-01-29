@@ -59,9 +59,10 @@
                                 <ul>
                                     <li>Lead IUGA Meetings</li>
                                     <li>Represent Informatics to faculty and staff with the Vice President</li>
-                                    <li>Shepherd and Guide IUGA Officers During the Yearly Officer Transitions</li>
+                                    <li>Shepherd and guide newly elected IUGA Officers during the annual transition</li>
                                     <li>Act as backup for the Director of Finance for financial matters</li>
-                                    <li>Act as, or Designate, the Informatics Representative On the iSchool Program Committee</li>
+				    <li>Act as, or designate, the Informatics Representative On the iSchool Program Committee</li>
+				    <li>Act as liaison to other iSchool student organizations</li>
                                 </ul>
                             </p>
                         </div>
