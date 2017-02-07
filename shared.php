@@ -31,7 +31,7 @@
                     <li><a href="/">home</a></li>
                     <li><a href="<?= $path ?>about">about</a></li>
                     <li><a href="<?= $path ?>events">events</a></li>
-                    <li><a href="<?= $path ?>photos">photos</a></li>
+                    <!--<li><a href="<?= $path ?>photos">photos</a></li>-->
                 </ul>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><span class="glyphicon glyphicon-th-list"></span></button>
             </div>
@@ -44,7 +44,7 @@
                 <li><a href="/">home</a></li>
                 <li><a href="<?= $path ?>about">about</a></li>
                 <li><a href="<?= $path ?>events">events</a></li>
-                <li><a href="<?= $path ?>photos">photos</a></li>
+                <!--<li><a href="<?= $path ?>photos">photos</a></li>-->
             </ul>
 
         </div>
