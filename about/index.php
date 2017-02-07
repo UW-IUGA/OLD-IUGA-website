@@ -27,9 +27,9 @@
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="other-about">
                             <p>
-                                The Informatics Undergraduate Association (IUGA) is a Registered Student Organization that functions as a student government for Informatics students. iUGA provides official channels for communication between the Informatics undergraduate
-                                student body and the faculty and administration of the Information School. iUGA promotes the interests of, and acts as an advocate for current and prospective Informatics students in/to the Information School at the University of Washington.
-                                We provide an opportunity for social, educational, and professional activities for the Informatics student body. iUGA and its members are actively involved in the Information School community. It is the responsibility of iUGA to provide
+                                The Informatics Undergraduate Association (IUGA) is a Registered Student Organization that functions as a student government for Informatics students. IUGA provides official channels for communication between the Informatics undergraduate
+                                student body and the faculty and administration of the Information School. IUGA promotes the interests of, and acts as an advocate for current and prospective Informatics students in/to the Information School at the University of Washington.
+                                We provide an opportunity for social, educational, and professional activities for the Informatics student body. IUGA and its members are actively involved in the Information School community. It is the responsibility of IUGA to provide
                                 its members with the tools to help them both in their undergraduate studies and beyond, as well as to foster a greater sense of community within the Informatics program.
                             </p>
                         </div>
@@ -106,11 +106,11 @@
                                 <ul>
                                     <li>Maintain the Financial Records</li>
                                     <li>Provide Reports On Finances to IUGA</li>
-                                    <li>Fulfill or Designate a Student Representative For Informatics on the iSchool Student Leadership Committee</li>
+                                    <li>Fulfill or Designate a Student Representative for Informatics on the iSchool Student Leadership Committee</li>
                                     <li>Organize the Financial Vectors of IUGA fundraising efforts</li>
                                     <li>Prepare and Submit the Yearly IUGA Budget to iSchool Administration</li>
                                     <li>Act as the Primary Account Holder for All IUGA Financial Accounts</li>
-                                    <li>Handle merchanise ordering and distribution</li>
+                                    <li>Handle merchandise ordering and distribution</li>
                                     <li>Help the incoming Director of Finance with the Yearly Budget during Spring Quarter</li>
                                 </ul>
                             </p>
@@ -131,7 +131,7 @@
                                 <ul>
                                     <li>Creating merchandise for IUGA, including clothing</li>
                                     <li>Creating informational posters/flyers for IUGA events</li>
-                                    <li>Maintain the IUGA logo and design dtyling</li>
+                                    <li>Maintain the IUGA logo and design styling</li>
                                     <li>Create a team to help in the creation of Informatics branded items</li>
                                     <li>Assist Finance with ordering and distribution of merchandise</li>
                                 </ul>
@@ -148,7 +148,7 @@
 
                             <h4>Director of Public Relations</h4>
 
-                            <p>The Director of Public Relations serves a vital communication role witin the Executive Council. These responsibilities Include:
+                            <p>The Director of Public Relations serves a vital communication role within the Executive Council. These responsibilities Include:
                                 <ul>
                                     <li>Communicate Announcement and Events to Informatics Students</li>
                                     <li>Lead the Planning and Organization of Social Events</li>
@@ -196,7 +196,7 @@
                                     <li>Support and engage in an active Diversity Committee composed of students, faculty and staff</li>
                                     <li>Fulfill, or appoint a student, to sit on the Informatics Admissions Committee during the summer</li>
                                     <li>Ensure that the events, ideas, and products of IUGA are made with the thought of diversity and inclusion</li>
-                                    <li>Collaborate with Student Services and other Registered Student Organizations(RSOs) on campus for diversity and inclusion events</li>
+                                    <li>Collaborate with Student Services and other Registered Student Organizations (RSOs) on campus for diversity and inclusion events</li>
                                 </ul>
                             </p>
                         </div>
@@ -241,7 +241,7 @@
                         <div class="other-about">
                             <p>
                                 Membership eligibility in IUGA is held by matriculated declared Informatics majors as defined by the Information School and the University of Washington. Members must also be in good disciplinary standing as outlined in the Student Code
-                                at the University of Washington
+                                at the University of Washington.
                             </p>
                         </div>
                     </div>

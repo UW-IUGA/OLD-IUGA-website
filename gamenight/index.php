@@ -7,7 +7,7 @@ $STEAM_BASE_ID = "TU0100214PC";
 $IP = $_SERVER['REMOTE_ADDR'];
 $STEAM_DATA = "steam.json";
 $PASSWORD = "3634675426";
-$QUARTER = "Winter 2016";
+$QUARTER = "Winter 2017";
 
 if(isset($_GET['reset']) && $_GET['reset'] == "iugaofficer"){
 	$file = fopen($STEAM_DATA,'w+');
