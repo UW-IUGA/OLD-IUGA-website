@@ -1,4 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+header {
+    margin-bottom: 99px;
+}
+
 nav,
 #small-nav {
     font-size: 125%;
@@ -21,7 +26,6 @@ nav {
 }
 
 h1 {
-    margin-top: 3em;
     background-color: #39275b;
     text-indent: 15px;
     font-weight: bold;
