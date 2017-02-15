@@ -1,1 +1,0 @@
-<?php  header( 'Location: http://www.iuga.info/elections/2016/' ) ;  ?>
