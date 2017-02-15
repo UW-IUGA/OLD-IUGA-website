@@ -1,0 +1,278 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+header {
+    margin-bottom: 99px;
+}
+
+nav,
+#small-nav {
+    font-size: 125%;
+    font-family: 'PT Sans', sans-serif;
+    width: 100%;
+    text-align: center;
+    top: 0;
+}
+
+nav {
+    background: white;
+    border-top: 5px solid #39275b;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 0.2em;
+    height: 4.5em;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+h1 {
+    background-color: #39275b;
+    text-indent: 15px;
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+}
+
+#home {
+    margin-top: 5em;
+}
+
+#logo {
+    float: left;
+    height: 4em;
+    padding: 10px;
+}
+
+#big-nav {
+    padding-top: 1em;
+    float: right;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    margin-right: 1em;
+}
+
+#small-nav li {
+    background: #ebebeb;
+    list-style: none;
+    border: 1px solid #39275b;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+#small-nav a {
+    margin-bottom: 3px;
+}
+
+#small-nav {
+    position: fixed;
+    z-index: 1;
+    top: 3.5em;
+    padding: 0;
+}
+
+nav li a {
+    display: inline-block;
+    padding-right: 4px;
+}
+
+#small-nav li a {
+    margin-bottom: 2px;
+}
+
+nav li a,
+#small-nav li a {
+    color: #39275b;
+    text-decoration: none;
+}
+
+#balance {
+    float: right;
+    width: 320px;
+}
+
+.navbar-nav {
+    display: none;
+}
+
+nav li a:hover,
+.active {
+    border-bottom: 3.5px solid #d7a900;
+    color: #d7a900;
+    text-decoration: none;
+}
+
+body {
+    background: #ebebeb;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 175%;
+}
+
+#home {
+    text-align: center;
+}
+
+#home-photo {
+    width: 60%;
+    margin: 0;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#eventPhotos img {
+    display: inline-block;
+    padding: .25em;
+    width: 100%;
+    height: 100%;
+}
+
+.flickr_badge_image {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+}
+
+#eventPhotos h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.col-md-6 {
+    margin-top: 2px;
+}
+
+#search {
+    margin-top: 4px;
+}
+
+.cards {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 0.5em;
+    border: 1px solid #CCC;
+    background-color: #EEE;
+    border-radius: 5px;
+    clear: both;
+    margin-top: 0.5em;
+}
+
+.contact,
+.contact:hover {
+    font-style: italic;
+    text-decoration: none;
+    color: #000000;
+}
+
+#imageGallery img {
+    display: inline-block;
+    padding: 7.5px 7.5px 7.5px 7.5px;
+    z-index: -1;
+}
+
+#imageGallery h3 {
+    background-color: #39275b;
+    color: #ffffff;
+    border: 2px;
+    border-radius: 5px;
+    padding-left: 7.5px;
+}
+
+#home {
+    text-align: center;
+}
+
+@media(max-width: 1000px) {
+    #big-nav {
+        display: none;
+    }
+    .navbar-toggle {
+        display: inline-block;
+    }
+    .glyphicon-th-list {
+        color: #39275b;
+    }
+    #home-photo {
+        width: 90%;
+    }
+}
+
+.card-heading {
+    font-size: 200%;
+    margin: 0;
+}
+
+li img {
+    float: right;
+    display: inline;
+    width: 20%;
+}
+
+.card {
+    overflow: hidden;
+}
+
+.homebox {
+    border-top: 15px solid #39275b;
+    margin-right: 5px;
+    text-align: center;
+    background-color: #FFFFFF;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.officer,
+.other-about {
+    border-top: 4px solid #39275b;
+    margin-right: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+}
+
+.homesearch {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.homelink {
+    color: #39275b;
+}
+
+.homeh3 {
+    margin-top: -5px;
+}
+
+.floater {
+    float: right;
+}
+
+#aboutus h2 {
+    background-color: #39275b;
+    color: #ffffff;
+    border: 2px;
+    border-radius: 5px;
+    padding-left: 7.5px;
+}
+
+
+/*
+the gold: #d7a900;
+the purple: #39275b;
+*/
