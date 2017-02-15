@@ -15,6 +15,9 @@ const Routes = (props) => (
 			<IndexRoute component={App} />
 			<Route path="/about" component={About} />
 			<Route path="/events" component={Events} />
+			<Route path="/elections" component={Elections}>
+				<Route path=":year" component={Elections} />
+			</Route>
 			<Route path="*" component={NotFound} />
 		</Route>
 	</Router>

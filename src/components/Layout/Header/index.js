@@ -28,6 +28,7 @@ export default class Header extends Component {
 							<li><IndexLink to="/" activeClassName="active">home</IndexLink></li>
 							<li><NavLink to="/about">about</NavLink></li>
 							<li><NavLink to="/events">events</NavLink></li>
+							<li><NavLink to="/elections">election</NavLink></li>
 							<li><a href="http://store.iuga.info/" target="_blank">store</a></li>
 						</ul>
 						<button type="button" onClick={() => {this.toggle()}} className="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -43,6 +44,7 @@ export default class Header extends Component {
 						<li><IndexLink to="/" activeClassName="active">home</IndexLink></li>
 						<li><NavLink to="/about">about</NavLink></li>
 						<li><NavLink to="/events">events</NavLink></li>
+						<li><NavLink to="/elections">election</NavLink></li>
 						<li><a href="http://store.iuga.info/" target="_blank">store</a></li>
 					</ul>
 
