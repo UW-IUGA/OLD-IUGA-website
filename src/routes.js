@@ -4,6 +4,7 @@ import { Router, Route, IndexRoute } from 'react-router';
 import App from './components/App';
 import About from './components/About';
 import Events from './components/Events';
+import Elections from './components/Elections';
 import NotFound from './components/NotFound';
 
 
