@@ -1,77 +1,77 @@
-.menu-list {
+.Elections .menu-list {
   padding-left: 40px;
   padding-right: 40px;
 }
-.years {
+.Elections .years {
   float: right;
 }
 
-.organizations {
+.Elections .organizations {
   float: left;
 }
 
-.menu-list-item {
+.Elections .menu-list-item {
   display: inline;
   list-style: none;
   margin-right: 1em;
 }
 
-.menu-list-item a {
+.Elections .menu-list-item a {
   color: #39275b;
   text-decoration: none;
 }
 
-.menu-list-item a.active {
+.Elections .menu-list-item a.active {
   border-bottom: 3.5px solid #d7a900;
   color: #d7a900;
   text-decoration: none;
 }
-.sidebar>ul{
+.Elections .sidebar>ul{
   border-right: 2px solid gray;
 }
 
-ul {
+.Elections ul {
   list-style-type: none;
 }
 
-img {
+.Elections img {
   max-width: 350px;
   float: left;
   margin-right: 35px;
   margin-bottom: 35px;
 }
 
-h1 {
+.Elections h1 {
   margin-bottom: 35px;
 }
 
-body{
+.Elections body{
   padding-left: 20px;
   padding-right: 20px;
   color: DimGray;
 }
 
-h2{
+.Elections h2{
   margin-bottom: 20px;
 }
 
-.list>li{
+.Elections .list>li{
   font-weight: bold;
 }
 
-.name {
+.Elections .name {
   font-weight: normal;
   cursor: pointer;
 }
 
-.name a {
+.Elections .name a {
   color: #1E90FF;
   text-decoration: none;
   display: inline-block;
   border-bottom: 3.5px solid #ebebeb;
 }
 
-.name a.active {
+.Elections .name a.active {
   border-bottom: 3.5px solid #d7a900;
   color: #d7a900;
   text-decoration: none;

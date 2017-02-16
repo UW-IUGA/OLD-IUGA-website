@@ -7,7 +7,7 @@ export default class Footer extends Component {
 	render() {
 		const { className } = this.props;
 		return(
-			<footer className={classnames('Header', className)}>
+			<footer className={classnames('Footer', className)}>
 			</footer>
 		);
 	}

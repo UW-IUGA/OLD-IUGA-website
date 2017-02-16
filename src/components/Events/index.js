@@ -10,7 +10,7 @@ export default class Events extends Component {
 		const { className, ...props } = this.props;
 		return (
 			<Layout  {...props}>
-				<div className={classnames('About', className)}>
+				<div className={classnames('Events', className)}>
 					<div className="row">
 						<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 							<h1>IUGA calendar of Events</h1>
