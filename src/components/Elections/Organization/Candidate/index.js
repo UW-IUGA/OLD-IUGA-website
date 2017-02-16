@@ -16,7 +16,7 @@ export default class Candidate extends Component {
 				<div className="statement">
 					<img
 						alt={this.props.candidate.name + " for " + this.props.candidate.role}
-						src={`/assets/election/${this.props.candidate.year}/${this.props.candidate.image}`}
+						src={`/assets/election/${this.props.year}/${this.props.candidate.image}`}
 					/>
 					{
 						this.props.candidate.statement.split("\n").map((p, i) => (

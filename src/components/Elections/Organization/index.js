@@ -69,7 +69,7 @@ export default class Organization extends Component {
 						</ul>
 					</div>
 					<div className="col-xs-12 col-sm-6 col-md-8 col-lg-8">
-						<Candidate candidate={this.state.candidate} />
+						<Candidate candidate={this.state.candidate} year={this.state.year} />
 					</div>
 				</div>
 			</div>
