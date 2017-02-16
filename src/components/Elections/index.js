@@ -33,7 +33,7 @@ export default class Elections extends Component {
 			this.setState({
 				years: years,
 				year: year
-			})
+			});
 		});
 	}
 
@@ -83,6 +83,14 @@ export default class Elections extends Component {
 		});
 	}
 
+	checkOrganizationMatch(a, b) {
+		return (
+			a != null &&
+			b != null &&
+			(a.name === b.name)
+		);
+	}
+
 	render() {
 		let year = this.state.year;
 		let organizations = this.state.yearData[year];
@@ -113,7 +121,8 @@ export default class Elections extends Component {
 								{ organizations &&
 									organizations.map((organization) => (
 										<li key={organization.name} className="organization menu-list-item">
-											<a onClick={() => this.selectOrganization(organization)} className={this.state.organization === organization ? "active" : ""}>{organization.name}</a>
+											<a onClick={() => this.selectOrganization(organization)}
+												className={this.checkOrganizationMatch(this.state.organization, organization) ? "active" : ""}>{organization.name}</a>
 										</li>
 									))
 								}
