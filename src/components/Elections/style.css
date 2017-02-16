@@ -1,19 +1,27 @@
+.menu-list {
+  padding-left: 40px;
+  padding-right: 40px;
+}
 .years {
+  float: right;
+}
+
+.organizations {
   float: left;
 }
 
-.year {
+.menu-list-item {
   display: inline;
   list-style: none;
   margin-right: 1em;
 }
 
-.year a {
+.menu-list-item a {
   color: #39275b;
   text-decoration: none;
 }
 
-.year a.active {
+.menu-list-item a.active {
   border-bottom: 3.5px solid #d7a900;
   color: #d7a900;
   text-decoration: none;
