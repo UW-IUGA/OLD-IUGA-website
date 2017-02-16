@@ -7,12 +7,12 @@ import homeImage from './assets/home-image.jpg';
 
 import './style.css';
 
-class App extends Component {
+export default class Home extends Component {
 	render() {
 		const { className, ...props } = this.props;
 		return (
 			<Layout {...props}>
-				<div className={classnames('App', className)}>
+				<div className={classnames('Home', className)}>
 					<div className="row">
 						<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 							<img className="img-responsive" alt="IUGA officers" src={homeImage} />
@@ -23,5 +23,3 @@ class App extends Component {
 		);
 	}
 }
-
-export default App;

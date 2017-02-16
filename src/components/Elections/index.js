@@ -90,7 +90,7 @@ export default class Elections extends Component {
 		const { className, ...props } = this.props;
 		return (
 			<Layout {...props}>
-				<div className={classnames('About', className)}>
+				<div className={classnames('Elections', className)}>
 					<div className="row">
 						<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 							<h1>IUGA / Winfo Elections</h1>
