@@ -76,3 +76,8 @@
   color: #d7a900;
   text-decoration: none;
 }
+
+.Elections .Elected {
+  font-weight: bold;
+  color: black
+}

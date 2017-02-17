@@ -12,7 +12,7 @@ export default class Candidate extends Component {
 		const { className } = this.props;
 		return (
 			<div className={classnames('Candidate', className)}>
-				<h2>{this.props.candidate.name}, {this.props.candidate.role}</h2>
+				<h2>{this.props.candidate.name}, {this.props.candidate.elected ? (<span className="Elected">Elected {this.props.candidate.role}</span>) : this.props.candidate.role}</h2>
 				<div className="statement">
 					<img
 						alt={this.props.candidate.name + " for " + this.props.candidate.role}

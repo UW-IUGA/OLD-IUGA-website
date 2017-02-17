@@ -19,7 +19,7 @@ export default class Role extends Component {
 								<a
 									onClick={() => this.props.selectCandidate(candidate, this.props.role.title)}
 									className={(this.props.selectedCandidate === candidate ? " active" : "")}
-								>{candidate.name}</a></li>
+								>{candidate.name}{candidate.elected ? ((<small className="Elected"> - Elected</small>)) : ""}</a></li>
 						))
 					}
 				</ul>

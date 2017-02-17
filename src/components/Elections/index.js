@@ -60,6 +60,7 @@ export default class Elections extends Component {
 				res.data.forEach((org) => {
 					org.roles.forEach((role) => {
 						this.shuffle(role.candidates);
+						role.candidates.sort(this.sortElected);
 					});
 				})
 				yearData[year] = res.data;
@@ -74,6 +75,16 @@ export default class Elections extends Component {
 		for (let i = a.length; i; i--) {
 			let j = Math.floor(Math.random() * i);
 			[a[i - 1], a[j]] = [a[j], a[i - 1]];
+		}
+	}
+
+	sortElected(a, b) {
+		if (a.elected) {
+			return -1;
+		} else if (b.elected) {
+			return 1;
+		} else {
+			return 0;
 		}
 	}
 
