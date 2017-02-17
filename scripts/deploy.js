@@ -7,6 +7,7 @@ var prefix = path ? path.split("/")[0] + "." : "";
 var rsync = new Rsync()
   .exclude('.DS_Store')
   .flags('av')
+  .set("delete")
   .shell('ssh -p 7822')
   .source('./build/')
   .destination(`iuga@iuga.info:~/www/${path}`)
