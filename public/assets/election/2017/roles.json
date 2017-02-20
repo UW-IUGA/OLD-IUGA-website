@@ -121,5 +121,141 @@
         ]
       }
     ]
+  },
+  {
+    "name": "Winfo",
+    "roles": [
+      {
+        "title": "President",
+        "candidates": [
+          {
+            "name": "Joycie Yu",
+            "image": "",
+            "video": "",
+            "statement": ""
+          },
+          {
+            "name": "Tiffany Chen",
+            "image": "",
+            "video": "",
+            "statement": ""
+          }
+        ]
+      },
+      {
+        "title": "Vice President",
+        "candidates": [
+          {
+            "name": "Savanna Yee",
+            "image": "",
+            "video": "",
+            "statement": ""
+          },
+          {
+            "name": "Melody Lee",
+            "image": "",
+            "video": "",
+            "statement": ""
+          },
+          {
+            "name": "Hilina Kidane",
+            "image": "",
+            "video": "",
+            "statement": ""
+          }
+        ]
+      },
+      {
+        "title": "Director of Public Relations",
+        "candidates": [
+          {
+            "name": "Andrea Chen",
+            "image": "",
+            "video": "",
+            "statement": ""
+          },
+          {
+            "name": "Sarah Feldmann",
+            "image": "",
+            "video": "",
+            "statement": ""
+          }
+        ]
+      },
+      {
+        "title": "Director of Outreach",
+        "candidates": [
+          {
+            "name": "Lee Segal",
+            "image": "",
+            "video": "",
+            "statement": ""
+          },
+          {
+            "name": "Jenny Lee",
+            "image": "",
+            "video": "",
+            "statement": ""
+          }
+        ]
+      },
+      {
+        "title": "Director of Finance",
+        "candidates": [
+          {
+            "name": "Zhanna Voloshina",
+            "image": "",
+            "video": "",
+            "statement": ""
+          }
+        ]
+      },
+      {
+        "title": "Director of Diversity Efforts",
+        "candidates": [
+          {
+            "name": "Jingyu (Jenny) Yang",
+            "image": "",
+            "video": "",
+            "statement": ""
+          },
+          {
+            "name": "Anushree Shukla",
+            "image": "",
+            "video": "",
+            "statement": ""
+          }
+        ]
+      },
+      {
+        "title": "Creative Director",
+        "candidates": [
+          {
+            "name": "Leanne Hwa",
+            "image": "",
+            "video": "",
+            "statement": ""
+          },
+          {
+            "name": "Sarah Phillips",
+            "image": "",
+            "video": "",
+            "statement": ""
+          },
+          {
+            "name": "Yicheng Jiang",
+            "image": "",
+            "video": "",
+            "statement": ""
+          },
+          {
+            "name": "Yi Cheng",
+            "image": "",
+            "video": "",
+            "statement": ""
+          }
+        ]
+      }
+    ]
   }
 ]
