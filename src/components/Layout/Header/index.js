@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import classnames from 'classnames';
+import React, { Component } from "react";
+import classnames from "classnames";
 
-import headerImage from '../assets/IUGA-header-image.jpg';
+import headerImage from "../assets/IUGA-header-image.jpg";
 
-import { Link, IndexLink } from 'react-router'
-import NavLink from '../NavLink'
+import { Link, IndexLink } from "react-router";
+import NavLink from "../NavLink";
 
 export default class Header extends Component {
 	constructor(props) {
@@ -12,13 +12,13 @@ export default class Header extends Component {
 
 		this.state = {
 			mobileNav: false
-		}
+		};
 	}
 
 	render() {
 		const { className } = this.props;
 		return(
-			<header className={classnames('Header', className)}>
+			<header className={classnames("Header", className)}>
 				<nav>
 
 					<div className="container">
@@ -31,7 +31,7 @@ export default class Header extends Component {
 							<li><NavLink to="/elections">election</NavLink></li>
 							<li><a href="http://store.iuga.info/" target="_blank">store</a></li>
 						</ul>
-						<button type="button" onClick={() => {this.toggle()}} className="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<button type="button" onClick={() => {this.toggle();}} className="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 							<span className="glyphicon glyphicon-th-list"></span>
 						</button>
 					</div>

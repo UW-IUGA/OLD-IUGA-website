@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import classnames from 'classnames';
+import React, { Component } from "react";
+import classnames from "classnames";
 
-import Layout from '../Layout';
+import Layout from "../Layout";
 
-import './style.css';
+import "./style.css";
 
 export default class About extends Component {
 	render() {
 		const { className, ...props } = this.props;
 		return (
 			<Layout {...props}>
-				<div className={classnames('About', className)}>
+				<div className={classnames("About", className)}>
 					<div className="row">
 						<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 							<h1>About Us</h1>

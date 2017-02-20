@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import classnames from 'classnames';
-import axios from 'axios';
+import React, { Component } from "react";
+import classnames from "classnames";
+import axios from "axios";
 
-import Layout from '../Layout';
-import { Link } from 'react-router'
+import Layout from "../Layout";
+import { Link } from "react-router";
 
 import Organization from "./Organization";
 
-import './style.css';
+import "./style.css";
 
 export default class Elections extends Component {
 	constructor(props) {
@@ -22,7 +22,7 @@ export default class Elections extends Component {
 	}
 
 	componentDidMount() {
-		axios.get('/assets/election/years.json')
+		axios.get("/assets/election/years.json")
 		.then(res => {
 			let years = res.data;
 			let year = this.props.params.year;
@@ -62,7 +62,7 @@ export default class Elections extends Component {
 						this.shuffle(role.candidates);
 						role.candidates.sort(this.sortElected);
 					});
-				})
+				});
 				yearData[year] = res.data;
 				this.setState({
 					yearData: yearData
@@ -109,7 +109,7 @@ export default class Elections extends Component {
 		const { className, ...props } = this.props;
 		return (
 			<Layout {...props}>
-				<div className={classnames('Elections', className)}>
+				<div className={classnames("Elections", className)}>
 					<div className="row">
 						<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 							<h1>IUGA / Winfo Elections</h1>
