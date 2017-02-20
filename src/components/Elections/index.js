@@ -55,14 +55,16 @@ export default class Elections extends Component {
 		if (year && !this.state.yearData[year]) {
 			axios.get(`/assets/election/${year}/roles.json`)
 			.then(res => {
-				var yearData = this.state.yearData;
-				res.data.forEach((org) => {
+				let yearData = this.state.yearData;
+				let orgs = res.data;
+				this.shuffle(orgs);
+				orgs.forEach((org) => {
 					org.roles.forEach((role) => {
 						this.shuffle(role.candidates);
 						role.candidates.sort(this.sortElected);
 					});
 				});
-				yearData[year] = res.data;
+				yearData[year] = orgs;
 				this.setState({
 					yearData: yearData
 				});
