@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import classnames from 'classnames';
+import React, { Component } from "react";
+import classnames from "classnames";
 
-import './style.css';
+import "./style.css";
 
 export default class Role extends Component {
 	render() {
@@ -11,7 +11,7 @@ export default class Role extends Component {
 
 		const { className } = this.props;
 		return (
-			<li className={classnames('Role', className)}>{this.props.role.title}
+			<li className={classnames("Role", className)}>{this.props.role.title}
 				<ul>
 					{
 						this.props.role.candidates.map((candidate) => (

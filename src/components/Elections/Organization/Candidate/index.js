@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import classnames from 'classnames';
+import React, { Component } from "react";
+import classnames from "classnames";
 
-import './style.css';
+import "./style.css";
 
 export default class Candidate extends Component {
 	render() {
@@ -11,7 +11,7 @@ export default class Candidate extends Component {
 
 		const { className } = this.props;
 		return (
-			<div className={classnames('Candidate', className)}>
+			<div className={classnames("Candidate", className)}>
 				<div className="row">
 					<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						<h2>{this.props.candidate.name}, {this.props.candidate.elected ? (<span className="Elected">Elected {this.props.candidate.role}</span>) : this.props.candidate.role}</h2>

@@ -1,11 +1,11 @@
-import React from 'react';
-import { Router, Route, IndexRoute } from 'react-router';
+import React from "react";
+import { Router, Route, IndexRoute } from "react-router";
 
-import Home from './components/Home';
-import About from './components/About';
-import Events from './components/Events';
-import Elections from './components/Elections';
-import NotFound from './components/NotFound';
+import Home from "./components/Home";
+import About from "./components/About";
+import Events from "./components/Events";
+import Elections from "./components/Elections";
+import NotFound from "./components/NotFound";
 
 
 

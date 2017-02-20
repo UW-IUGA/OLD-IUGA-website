@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import classnames from 'classnames';
+import React, { Component } from "react";
+import classnames from "classnames";
 
-import Header from './Header'
-import Footer from './Footer'
+import Header from "./Header";
+import Footer from "./Footer";
 
-import './style.css';
+import "./style.css";
 
 export default class Layout extends Component {
 	render() {
@@ -12,7 +12,7 @@ export default class Layout extends Component {
 		return(
 			<div>
 				<Header {...props}/>
-				<main className={classnames('Main', className)}>
+				<main className={classnames("Main", className)}>
 					<div className="container">
 						{ this.props.children }
 					</div>

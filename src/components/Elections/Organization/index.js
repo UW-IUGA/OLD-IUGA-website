@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import classnames from 'classnames';
+import React, { Component } from "react";
+import classnames from "classnames";
 
 import Role from "./Role";
 import Candidate from "./Candidate";
 
-import './style.css';
+import "./style.css";
 
 export default class Organization extends Component {
 	constructor(props) {
@@ -56,7 +56,7 @@ export default class Organization extends Component {
 
 		const { className } = this.props;
 		return (
-			<div className={classnames('Organization', className)}>
+			<div className={classnames("Organization", className)}>
 				<div className="row">
 					<div className="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 						<h2>{this.props.year} {this.props.organization.name} Candidates:</h2>
