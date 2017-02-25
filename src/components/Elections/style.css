@@ -14,6 +14,7 @@
   display: inline;
   list-style: none;
   margin-right: 1em;
+  cursor: pointer;
 }
 
 .Elections .menu-list-item a {
@@ -21,7 +22,8 @@
   text-decoration: none;
 }
 
-.Elections .menu-list-item a.active {
+.Elections .menu-list-item a.active,
+.Elections .menu-list-item a:hover {
   border-bottom: 3.5px solid #d7a900;
   color: #d7a900;
   text-decoration: none;
@@ -71,7 +73,8 @@
   border-bottom: 3.5px solid #ebebeb;
 }
 
-.Elections .name a.active {
+.Elections .name a.active,
+.Elections .name a:hover {
   border-bottom: 3.5px solid #d7a900;
   color: #d7a900;
   text-decoration: none;
