@@ -33,18 +33,11 @@ if (!checkRequiredFiles([paths.appIndexJs])) {
 // Tools like Cloud9 rely on this.
 var DEFAULT_PORT = process.env.PORT || 3000;
 var compiler;
-var handleCompile = function (err, stats) {
-  if (err || stats.hasErrors() || stats.hasWarnings()) {
-    process.exit(1);
-  } else {
-    process.exit(0);
-  }
-};
 
 function setupCompiler(host, port, protocol) {
   // "Compiler" is a low-level interface to Webpack.
   // It lets us listen to some events and provide our own custom messages.
-  compiler = webpack(config, handleCompile);
+  compiler = webpack(config);
 
   // "invalid" event fires when you have changed a file, and Webpack is
   // recompiling a bundle. WebpackDevServer takes care to pause serving the
