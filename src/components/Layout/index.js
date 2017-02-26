@@ -8,16 +8,15 @@ import "./style.css";
 
 export default class Layout extends Component {
 	render() {
-		const { className, ...props } = this.props;
 		return(
 			<div>
-				<Header {...props}/>
-				<main className={classnames("Main", className)}>
+				<Header/>
+				<main className={classnames("Main", this.props.className)}>
 					<div className="container">
 						{ this.props.children }
 					</div>
 				</main>
-				<Footer {...props}/>
+				<Footer/>
 			</div>
 		);
 	}

@@ -16,9 +16,8 @@ export default class Header extends Component {
 	}
 
 	render() {
-		const { className } = this.props;
 		return(
-			<header className={classnames("Header", className)}>
+			<header className={classnames("Header", this.props.className)}>
 				<nav>
 
 					<div className="container">

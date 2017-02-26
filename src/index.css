@@ -104,7 +104,8 @@ nav li a,
 }
 
 nav li a:hover,
-.active {
+nav li a:active,
+nav li a.active {
     border-bottom: 3.5px solid #d7a900;
     color: #d7a900;
     text-decoration: none;
