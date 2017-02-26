@@ -1,7 +1,10 @@
 var Rsync = require('rsync');
+var chalk = require('chalk');
 
 var path = process.argv.length > 2 ? process.argv[2].split("=")[1] : "";
 var prefix = path ? path.split("/")[0] + "." : "";
+
+process.env.PUBLICURL = process.env.PUBLICURL || `http://${prefix}iuga.info`;
 
 // Build the command
 var rsync = new Rsync()
@@ -14,8 +17,8 @@ var rsync = new Rsync()
 
 console.log("");
 console.log("");
-console.log(`Deploying to Server: http://${prefix}iuga.info`);
-console.log("You will need to input your password");
+console.log("Deploying to Server: " + chalk.green(process.env.PUBLICURL));
+console.log("You will need to input your " + chalk.blue("password"));
 console.log("");
 console.log("");
 
@@ -29,7 +32,7 @@ rsync.execute(function(error, code, cmd) {
   } else {
     console.log("");
     console.log("");
-    console.log(`Deployed!! visit it at: http://${prefix}iuga.info`);
+    console.log("Deployed!! visit it at: " + chalk.green(process.env.PUBLICURL));
   }
   console.log("");
   console.log("");
