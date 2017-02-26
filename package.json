@@ -61,8 +61,9 @@
     "start": "NODE_ENV=pre-dev node scripts/build.js && node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
+    "dev": "npm start",
     "deploy": "npm run build; node ./scripts/deploy.js",
-    "deploy-beta": "npm run build; node ./scripts/deploy.js --path=beta/"
+    "deploy-beta": "PUBLICURL=http://beta.iuga.info npm run build; node ./scripts/deploy.js --path=beta/"
   },
   "jest": {
     "collectCoverageFrom": [
