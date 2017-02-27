@@ -23,7 +23,7 @@ export default (locals, callback) => {
 		location: location
 	}, function(error, redirectLocation, renderProps) {
 		var html = ReactDOMServer.renderToStaticMarkup(
-			<Template>
+			<Template location={location}>
 				<RouterContext {...renderProps} />
 			</Template>
 		);
