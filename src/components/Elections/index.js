@@ -16,8 +16,16 @@ export default class Elections extends Component {
 			years: [],
 			yearData: {},
 			year: null,
-			organization: null
+			organization: null,
+			ballot: null,
+			currentTime: Date.now()
 		};
+
+		setInterval(() => {
+			this.setState({
+				currentTime: Date.now()
+			});
+		}, 1000);
 	}
 
 	componentDidMount() {
@@ -53,10 +61,10 @@ export default class Elections extends Component {
 			this.props.router.replace(`/elections/${this.state.years[this.state.years.length - 1]}`);
 		}
 		if (year && !this.state.yearData[year]) {
-			axios.get(`/assets/election/${year}/roles.json`)
+			axios.get(`/assets/election/${year}/data.json`)
 			.then(res => {
 				let yearData = this.state.yearData;
-				let orgs = res.data;
+				let orgs = res.data.orginizations;
 				this.shuffle(orgs);
 				orgs.forEach((org) => {
 					org.roles.forEach((role) => {
@@ -66,10 +74,22 @@ export default class Elections extends Component {
 				});
 				yearData[year] = orgs;
 				this.setState({
-					yearData: yearData
+					yearData: yearData,
+					ballot: res.data.ballot
 				});
 			}).catch(() => {});
 		}
+	}
+
+	dateCheck(ballot) {
+		var fDate = Date.parse(ballot.open);
+		var lDate = Date.parse(ballot.close);
+		var cDate = Date.now();
+
+		if((cDate <= lDate && cDate >= fDate)) {
+			return true;
+		}
+		return false;
 	}
 
 	shuffle(a) {
@@ -103,9 +123,44 @@ export default class Elections extends Component {
 		);
 	}
 
+	pad(n, width, z) {
+		z = z || "0";
+		n = n + "";
+		return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+	}
+
 	render() {
 		let year = this.state.year;
 		let organizations = this.state.yearData[year];
+
+		let ballot;
+		if (this.state.ballot != null && this.dateCheck(this.state.ballot)) {
+			let close = new Date(this.state.ballot.close);
+			let left = close - this.state.currentTime;
+			window.close = close;
+			window.left = left;
+			let hours = 60 * 60 * 1000;
+			let minutes = 60 * 1000;
+			let seconds = 1000;
+			let timeLeft = `${this.pad(Math.floor(left/hours), 2)}:${this.pad(Math.floor((left % hours) / minutes), 2)}:${this.pad(Math.floor((left % minutes) / seconds), 2)}`;
+			ballot = (
+				<div>
+					<p>
+						<a className="btn btn-default ballot"
+							href={this.state.ballot.url}
+							target="_blank"
+							style={{backgroundColor: this.state.ballot.color}}>
+							Fill out Ballot
+						</a>
+					</p>
+					<p>Ballot closes on {close.toDateString()} at {close.toLocaleTimeString()}</p>
+					{
+						left < (12 * 60 * 60 * 1000) &&
+						(<p>Time Left to Vote: {timeLeft}</p>)
+					}
+				</div>
+			);
+		}
 
 		return (
 			<div className={classnames("Elections", this.props.className)}>
@@ -140,7 +195,7 @@ export default class Elections extends Component {
 					</div>
 				</div>
 
-				<Organization organization={this.state.organization} year={year}/>
+				<Organization organization={this.state.organization} year={year} ballot={ballot}/>
 			</div>
 		);
 	}

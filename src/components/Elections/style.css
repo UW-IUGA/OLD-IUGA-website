@@ -2,6 +2,7 @@
   padding-left: 40px;
   padding-right: 40px;
 }
+
 .Elections .years {
   float: right;
 }
@@ -83,4 +84,31 @@
 .Elections .Elected {
   font-weight: bold;
   color: black
+}
+
+.Elections a.ballot {
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 0;
+  font-size: 25px;
+}
+
+.Elections p {
+  color: #333;
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .Elections .menu-list {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .Elections img {
+    max-width: 100%;
+    margin-right: 0;
+  }
 }
