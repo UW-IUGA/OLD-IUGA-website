@@ -8,7 +8,7 @@ var ManifestPlugin = require('webpack-manifest-plugin');
 var paths = require('./paths');
 var getClientEnvironment = require('./env');
 var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
-var static_routes = require('../src/static_routes');
+var prerender = require('../src/prerender_routes');
 
 
 // Webpack uses `publicPath` to determine where the app is being served from.
@@ -213,7 +213,7 @@ module.exports = {
       fileName: 'asset-manifest.json'
     }),
     new StaticSiteGeneratorPlugin({
-      paths: static_routes.routes
+      paths: prerender.routes
     })
   ],
   // Some libraries import Node modules but don't use them in the browser.
