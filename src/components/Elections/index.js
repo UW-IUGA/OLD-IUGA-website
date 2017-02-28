@@ -16,16 +16,8 @@ export default class Elections extends Component {
 			years: [],
 			yearData: {},
 			year: null,
-			organization: null,
-			ballot: null,
-			currentTime: Date.now()
+			organization: null
 		};
-
-		setInterval(() => {
-			this.setState({
-				currentTime: Date.now()
-			});
-		}, 1000);
 	}
 
 	componentDidMount() {
@@ -48,9 +40,9 @@ export default class Elections extends Component {
 		let year = this.props.params.year;
 		if (year && (!this.state.organization || this.state.year !== year)) {
 			// Select first organization
-			let organizations = this.state.yearData[year];
-			if (organizations) {
-				let organization = organizations[0];
+			let data = this.state.yearData[year];
+			if (data) {
+				let organization = data.organizations[0];
 				this.setState({
 					organization: organization,
 					year: year
@@ -64,18 +56,20 @@ export default class Elections extends Component {
 			axios.get(`/assets/election/${year}/data.json`)
 			.then(res => {
 				let yearData = this.state.yearData;
-				let orgs = res.data.orginizations;
-				this.shuffle(orgs);
-				orgs.forEach((org) => {
+				let organizations = res.data.organizations;
+				this.shuffle(organizations);
+				organizations.forEach((org) => {
 					org.roles.forEach((role) => {
 						this.shuffle(role.candidates);
 						role.candidates.sort(this.sortElected);
 					});
 				});
-				yearData[year] = orgs;
-				this.setState({
-					yearData: yearData,
+				yearData[year] = {
+					organizations: organizations,
 					ballot: res.data.ballot
+				};
+				this.setState({
+					yearData: yearData
 				});
 			}).catch(() => {});
 		}
@@ -131,33 +125,28 @@ export default class Elections extends Component {
 
 	render() {
 		let year = this.state.year;
-		let organizations = this.state.yearData[year];
+		let data = this.state.yearData[year];
+		if (data == null) {
+			return null;
+		}
 
-		let ballot;
-		if (this.state.ballot != null && this.dateCheck(this.state.ballot)) {
-			let close = new Date(this.state.ballot.close);
-			let left = close - this.state.currentTime;
-			window.close = close;
-			window.left = left;
-			let hours = 60 * 60 * 1000;
-			let minutes = 60 * 1000;
-			let seconds = 1000;
-			let timeLeft = `${this.pad(Math.floor(left/hours), 2)}:${this.pad(Math.floor((left % hours) / minutes), 2)}:${this.pad(Math.floor((left % minutes) / seconds), 2)}`;
-			ballot = (
+		let organizations = data.organizations;
+		let ballot = data.ballot;
+
+		let renderedBallot;
+		if (ballot != null && this.dateCheck(ballot)) {
+			let close = new Date(ballot.close);
+			renderedBallot = (
 				<div>
 					<p>
 						<a className="btn btn-default ballot"
-							href={this.state.ballot.url}
+							href={ballot.url}
 							target="_blank"
-							style={{backgroundColor: this.state.ballot.color}}>
+							style={{backgroundColor: ballot.color}}>
 							Fill out Ballot
 						</a>
 					</p>
-					<p>Ballot closes on {close.toDateString()} at {close.toLocaleTimeString()}</p>
-					{
-						left < (12 * 60 * 60 * 1000) &&
-						(<p>Time Left to Vote: {timeLeft}</p>)
-					}
+					<p>Ballot closes on <strong className="closes">{close.toDateString()}</strong> at <strong className="closes">{close.toLocaleTimeString()}</strong></p>
 				</div>
 			);
 		}
@@ -195,7 +184,7 @@ export default class Elections extends Component {
 					</div>
 				</div>
 
-				<Organization organization={this.state.organization} year={year} ballot={ballot}/>
+				<Organization organization={this.state.organization} year={year} ballot={renderedBallot}/>
 			</div>
 		);
 	}

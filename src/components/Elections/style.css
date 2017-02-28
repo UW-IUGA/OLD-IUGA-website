@@ -96,6 +96,10 @@
   font-size: 25px;
 }
 
+.Elections .closes {
+  color: red;
+}
+
 .Elections p {
   color: #333;
 }
