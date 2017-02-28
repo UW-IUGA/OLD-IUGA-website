@@ -40,9 +40,9 @@ export default class Elections extends Component {
 		let year = this.props.params.year;
 		if (year && (!this.state.organization || this.state.year !== year)) {
 			// Select first organization
-			let organizations = this.state.yearData[year];
-			if (organizations) {
-				let organization = organizations[0];
+			let data = this.state.yearData[year];
+			if (data) {
+				let organization = data.organizations[0];
 				this.setState({
 					organization: organization,
 					year: year
@@ -53,21 +53,37 @@ export default class Elections extends Component {
 			this.props.router.replace(`/elections/${this.state.years[this.state.years.length - 1]}`);
 		}
 		if (year && !this.state.yearData[year]) {
-			axios.get(`/assets/election/${year}/roles.json`)
+			axios.get(`/assets/election/${year}/data.json`)
 			.then(res => {
-				var yearData = this.state.yearData;
-				res.data.forEach((org) => {
+				let yearData = this.state.yearData;
+				let organizations = res.data.organizations;
+				this.shuffle(organizations);
+				organizations.forEach((org) => {
 					org.roles.forEach((role) => {
 						this.shuffle(role.candidates);
 						role.candidates.sort(this.sortElected);
 					});
 				});
-				yearData[year] = res.data;
+				yearData[year] = {
+					organizations: organizations,
+					ballot: res.data.ballot
+				};
 				this.setState({
 					yearData: yearData
 				});
 			}).catch(() => {});
 		}
+	}
+
+	dateCheck(ballot) {
+		var fDate = Date.parse(ballot.open);
+		var lDate = Date.parse(ballot.close);
+		var cDate = Date.now();
+
+		if((cDate <= lDate && cDate >= fDate)) {
+			return true;
+		}
+		return false;
 	}
 
 	shuffle(a) {
@@ -101,9 +117,38 @@ export default class Elections extends Component {
 		);
 	}
 
+	pad(n, width, z) {
+		z = z || "0";
+		n = n + "";
+		return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+	}
+
 	render() {
 		let year = this.state.year;
-		let organizations = this.state.yearData[year];
+		let data = this.state.yearData[year];
+		if (data == null) {
+			return null;
+		}
+
+		let organizations = data.organizations;
+		let ballot = data.ballot;
+
+		let renderedBallot;
+		if (ballot != null && this.dateCheck(ballot)) {
+			renderedBallot = (
+				<div>
+					<p>
+						<a className="btn btn-default ballot"
+							href={ballot.url}
+							target="_blank"
+							style={{backgroundColor: ballot.color}}>
+							Fill out Ballot
+						</a>
+					</p>
+					<p>Polls closes <strong className="closes">{ballot.date}</strong> at <strong className="closes">{ballot.time}</strong></p>
+				</div>
+			);
+		}
 
 		return (
 			<div className={classnames("Elections", this.props.className)}>
@@ -138,7 +183,7 @@ export default class Elections extends Component {
 					</div>
 				</div>
 
-				<Organization organization={this.state.organization} year={year}/>
+				<Organization organization={this.state.organization} year={year} ballot={renderedBallot}/>
 			</div>
 		);
 	}

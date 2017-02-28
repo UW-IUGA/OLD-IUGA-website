@@ -27,38 +27,34 @@ var smartlook = `
 	smartlook('init', '4b57d5158a86253a0f61125df9b101569598f7db');
 `;
 
-let ogmaps = {
-	default: (
-		<div>
-			<meta property="og:title"       content="IUGA"/>
-			<meta property="og:site_name"   content="Informatics Undergraduate Association (IUGA) "/>
-			<meta property="og:description" content="The Informatics Undergraduate Association (IUGA) is a Registered Student Organization that functions as a student government for Informatics students."/>
-			<meta property="og:image"       content="http://iuga.info/assets/img/facebook-image.jpg"/>
-			<meta property="og:type"        content="school"/>
-		</div>
-	),
-	election: (
-		<div>
-			<meta property="og:title"       content="IUGA / Winfo Elections"/>
-			<meta property="og:site_name"   content="Informatics Undergraduate Association (IUGA) "/>
-			<meta property="og:description" content="The fate of both IUGA and Winfo is in your hands! Do your civic duty and vote!"/>
-			<meta property="og:image"       content="http://iuga.info/assets/img/facebook-election-image.png"/>
-			<meta property="og:type"        content="school"/>
-			<meta property="og:url"         content="http://iuga.info/election/" />
-		</div>
-	)
+let headTags = {
+	default: [
+		(<meta property="og:title"       content="IUGA"/>),
+		(<meta property="og:site_name"   content="Informatics Undergraduate Association (IUGA) "/>),
+		(<meta property="og:description" content="The Informatics Undergraduate Association (IUGA) is a Registered Student Organization that functions as a student government for Informatics students."/>),
+		(<meta property="og:image"       content="http://iuga.info/assets/img/facebook-image.jpg"/>),
+		(<meta property="og:type"        content="school"/>)
+	],
+	election: [
+		(<meta property="og:title"       content="IUGA / Winfo Elections"/>),
+		(<meta property="og:site_name"   content="Informatics Undergraduate Association (IUGA) "/>),
+		(<meta property="og:description" content="The fate of both IUGA and Winfo is in your hands! Do your civic duty and vote!"/>),
+		(<meta property="og:image"       content="http://iuga.info/assets/img/facebook-election-image.png"/>),
+		(<meta property="og:type"        content="school"/>),
+		(<meta property="og:url"         content="http://iuga.info/elections/" />)
+	]
 };
 
 export default class Template extends React.Component {
 	render() {
-		let ogcontent;
+		let tags;
 		let path = this.props.location.pathname;
 		switch(true) {
 		case /\/elections(\/.*){0,}/.test(path):
-			ogcontent = ogmaps.election;
+			tags = headTags.election;
 			break;
 		default:
-			ogcontent = ogmaps.default;
+			tags = headTags.default;
 		}
 		return(
 			<html lang="en">
@@ -73,7 +69,7 @@ export default class Template extends React.Component {
 
 					<link rel="stylesheet" href="{{CSS}}"/>
 
-					{ogcontent}
+					{tags}
 
 				</head>
 				<body>
