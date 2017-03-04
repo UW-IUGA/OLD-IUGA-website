@@ -227,8 +227,6 @@ function build(previousSizeMap) {
     var appPackage  = require(paths.appPackageJson);
     var publicUrl = process.env.PUBLICURL || paths.publicUrl;
 
-    console.log(process.env.PUBLICURL);
-
     console.log('The project was built assuming it is hosted at ' + chalk.green(publicUrl) + '.');
     if (!process.env.PUBLICURL) {
       console.log('You can control this with the ' + chalk.green('homepage') + ' field in your '  + chalk.cyan('package.json') + '.');
