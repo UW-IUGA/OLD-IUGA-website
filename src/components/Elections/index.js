@@ -76,11 +76,14 @@ export default class Elections extends Component {
 	}
 
 	dateCheck(ballot) {
-		var fDate = Date.parse(ballot.open);
-		var lDate = Date.parse(ballot.close);
-		var cDate = Date.now();
+		let open = ballot.open.split(/[- :]/);
+		let close = ballot.close.split(/[- :]/);
 
-		if((cDate <= lDate && cDate >= fDate)) {
+		let openDate = new Date(open[0], open[1]-1, open[2], open[3], open[4], open[5]);
+		let closeDate = new Date(close[0], close[1]-1, close[2], close[3], close[4], close[5]);
+		let now = Date.now();
+
+		if(now <= closeDate && now >= openDate) {
 			return true;
 		}
 		return false;
