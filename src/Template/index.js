@@ -29,19 +29,37 @@ var smartlook = `
 
 let headTags = {
 	default: [
-		(<meta property="og:title"       content="IUGA"/>),
-		(<meta property="og:site_name"   content="Informatics Undergraduate Association (IUGA) "/>),
-		(<meta property="og:description" content="The Informatics Undergraduate Association (IUGA) is a Registered Student Organization that functions as a student government for Informatics students."/>),
-		(<meta property="og:image"       content="http://iuga.info/assets/img/facebook-image.jpg"/>),
-		(<meta property="og:type"        content="school"/>)
+		// Facebook Open Graph Tags: https://developers.facebook.com/tools/debug/og/object/?q=http%3A%2F%2Fiuga.info%2F
+		(<meta property="og:title"        content="Informatics Undergraduate Association (IUGA)"/>),
+		(<meta property="og:site_name"    content="Informatics Undergraduate Association (IUGA)"/>),
+		(<meta property="og:description"  content="The Informatics Undergraduate Association (IUGA) is a Registered Student Organization that functions as a student government for Informatics students."/>),
+		(<meta property="og:image"        content="http://iuga.info/assets/img/main-banner-image.jpg"/>),
+		(<meta property="og:type"         content="school"/>),
+
+		// Twitter Summary Card: https://dev.twitter.com/cards/types/summary
+		(<meta name="twitter:card"        content="summary" />),
+		(<meta name="twitter:site"        content="@iugauw" />),
+		(<meta name="twitter:title"       content="Informatics Undergraduate Association" />),
+		(<meta name="twitter:description" content="The Informatics Undergraduate Association (IUGA) is a Registered Student Organization that functions as a student government for Informatics students." />),
+		(<meta name="twitter:image"       content="http://iuga.info/assets/img/IUGA-Monogram.jpg" />),
+		(<meta name="twitter:image:alt"   content="Informatics Undergraduate Association (IUGA) Logo" />)
 	],
 	election: [
+		// Facebook Open Graph Tags: https://developers.facebook.com/tools/debug/og/object/?q=http%3A%2F%2Fiuga.info%2Felections%2F
 		(<meta property="og:title"       content="IUGA / Winfo Elections"/>),
 		(<meta property="og:site_name"   content="Informatics Undergraduate Association (IUGA) "/>),
 		(<meta property="og:description" content="The fate of both IUGA and Winfo is in your hands! Do your civic duty and vote!"/>),
-		(<meta property="og:image"       content="http://iuga.info/assets/img/facebook-election-image.png"/>),
+		(<meta property="og:image"       content="http://iuga.info/assets/img/election-banner-image.png"/>),
 		(<meta property="og:type"        content="school"/>),
-		(<meta property="og:url"         content="http://iuga.info/elections/" />)
+		(<meta property="og:url"         content="http://iuga.info/elections/" />),
+
+		// Twitter Summary Card: https://dev.twitter.com/cards/types/summary-large-image
+		(<meta name="twitter:card"        content="summary_large_image" />),
+		(<meta name="twitter:site"        content="@iugauw" />),
+		(<meta name="twitter:title"       content="IUGA / Winfo Elections" />),
+		(<meta name="twitter:description" content="The fate of both IUGA and Winfo is in your hands! Do your civic duty and vote!" />),
+		(<meta name="twitter:image"       content="http://iuga.info/assets/img/election-banner-image.png" />),
+		(<meta name="twitter:image:alt"   content="Informatics Undergraduate Association (IUGA) and Women in Informatics (Winfo) Election" />)
 	]
 };
 
