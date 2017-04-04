@@ -14,9 +14,19 @@ export default class Candidate extends Component {
 			<div className={classnames("Candidate", className)}>
 				<div className="row">
 					<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-						<h2>{this.props.candidate.name}, {this.props.candidate.elected ? (<span className="Elected">Elected {this.props.candidate.role}</span>) : this.props.candidate.role}</h2>
+						<h2>{this.props.candidate.name}, {this.props.candidate.outcome != null ? (<span className="Elected">{this.props.candidate.outcome} {this.props.candidate.role}</span>) : this.props.candidate.role}</h2>
 					</div>
 				</div>
+
+				{ this.props.candidate.adminMessage &&
+					(
+						<div className="row">
+							<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<p className="alert alert-info">{this.props.candidate.adminMessage}</p>
+							</div>
+						</div>
+					)
+				}
 
 				<div className="row">
 					<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -33,18 +43,18 @@ export default class Candidate extends Component {
 						</div>
 					</div>
 				</div>
-
-					{ this.props.candidate.video &&
-						(
-							<div className="row">
-								<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-									<div className="embed-responsive embed-responsive-16by9">
-										<iframe className="embed-responsive-item" src={this.props.candidate.video} frameBorder="0" allowFullScreen></iframe>
-									</div>
+				
+				{ this.props.candidate.video &&
+					(
+						<div className="row">
+							<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<div className="embed-responsive embed-responsive-16by9">
+									<iframe className="embed-responsive-item" src={this.props.candidate.video} frameBorder="0" allowFullScreen></iframe>
 								</div>
 							</div>
-						)
-					}
+						</div>
+					)
+				}
 			</div>
 		);
 	}
