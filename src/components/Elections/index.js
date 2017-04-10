@@ -97,9 +97,9 @@ export default class Elections extends Component {
 	}
 
 	sortElected(a, b) {
-		if (a.elected) {
+		if (a.outcome != null) {
 			return -1;
-		} else if (b.elected) {
+		} else if (b.outcome != null) {
 			return 1;
 		} else {
 			return 0;
