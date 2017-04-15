@@ -1,0 +1,25 @@
+.event-card {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #ffffff;
+    padding-top: 10px;
+}
+.event-card:nth-child(even) {
+    background-color: #e8e3d3;
+}
+
+.event-card:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.event-period {
+    vertical-align: middle;
+}
+
+a:link, a:visited {
+    color: #000000;
+}
+
+a:hover {
+    color: #4b2e83;
+}

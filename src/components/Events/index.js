@@ -1,11 +1,52 @@
 import React, { Component } from "react";
-import classnames from "classnames";
+//import classnames from "classnames";
+
+import axios from "axios";
+import FeedEvent from "./FeedEvent";
 
 import "./style.css";
 
+const FEED_URL = "http://iuga-server.ischool.uw.edu/get";
+
 export default class Events extends Component {
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			events: null
+		};
+	}
+
+	componentDidMount() {
+		axios.get(FEED_URL)
+			.then(res => {
+				console.log(res.data);
+				this.setState({
+					events: res.data
+				});
+			}).catch(() => {});
+	}
+	
 	render() {
+
+		let events = this.state.events;
+		if (events == null) {
+			return null;
+		}
+
 		return (
+			<div>
+				<h1>Upcoming IUGA Events</h1>
+
+				{events.reverse().map((event) => (
+					<FeedEvent event={event} key={event.id}></FeedEvent>
+				))}
+			</div>
+		);
+	}
+}
+
+/*
 			<div className={classnames("Events", this.props.className)}>
 				<div className="row">
 					<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -23,6 +64,4 @@ export default class Events extends Component {
 					</div>
 				</div>
 			</div>
-		);
-	}
-}
+*/
