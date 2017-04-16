@@ -1,15 +1,41 @@
 .event-card {
     margin-top: 5px;
     margin-bottom: 5px;
-    color: #ffffff;
+    color: #000000;
     padding-top: 10px;
+    padding-left: -15px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
+
+.event-img {
+    width:100%;
+    padding: 0;
+}
+
+.event-img.wrapper {
+    padding: 0;
+}
+
+.event-card:hover {
+    background: #4b2e83;
+}
+
 .event-card:nth-child(even) {
     background-color: #e8e3d3;
 }
 
 .event-card:nth-child(odd) {
     background-color: #ffffff;
+}
+
+.event-title {
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.event-link {
+    float: right;
 }
 
 .event-period {
@@ -22,4 +48,5 @@ a:link, a:visited {
 
 a:hover {
     color: #4b2e83;
+    text-decoration: none;
 }

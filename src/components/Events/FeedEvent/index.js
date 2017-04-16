@@ -11,13 +11,22 @@ export default class FeedEvent extends Component {
 		// If the event property does not exist
 		// do not display anything
 		let event = this.props.event;
-		if (event == null) {
+		if (!event) {
 			return null;
 		}
+
+		//let eventPlace = event.place;
 		if (HIDE_PAST_EVENTS) {
 			if (moment(event.start_time).diff(moment()) < 0) {
 				return null;
 			}
+		}
+
+		let eventLoc;
+		if (!event.place) {
+			eventLoc = "No place given";
+		} else {
+			eventLoc = event.place.name;
 		}
 
 		// Precalculate necessary information
@@ -27,16 +36,22 @@ export default class FeedEvent extends Component {
 
 		return (
 			<div className="event-card row">
-				<a href={eventLink}>
-					<div className="event-period text-center col-md-2 col-lg-2">
-						<div className="event-time">{eventTime}</div>
-						<div className="event-date">{eventDate}</div>
-					</div>
-					<div className="event-descr-wrapper col-md-10 col-lg-10">
-						<p className="event-title">{event.name}</p>
-						<p className="event-descr">{event.description}</p>
-					</div>
-				</a>
+				<div className="event-img-wrapper text-center col-md-2 col-lg-2">
+					<img className="event-img" src={event.cover.source}/>
+				</div>
+				<div className="event-period text-center col-md-2 col-lg-2">
+					<p className="event-time">{eventTime}</p>
+					<p className="event-date">{eventDate}</p>
+					<p className="event-loc">{eventLoc}</p>
+
+				</div>
+				<div className="event-descr-wrapper col-md-8 col-lg-8">
+					<p className="event-title">{event.name}</p>
+					<div className="event-descr">{event.description.split("\n").map(i => {
+						return <p key={i} className="event-descr-paragraph">{i}</p>;
+					})}</div>
+					<a className="event-link" href={eventLink}>View the Facebook event ></a>
+				</div>
 			</div>
 		);
 	}
