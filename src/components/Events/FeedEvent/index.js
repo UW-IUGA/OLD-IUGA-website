@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import moment from "moment";
+import Linkify from "react-linkify";
 
 import "./style.css";
 
@@ -47,10 +48,14 @@ export default class FeedEvent extends Component {
 				</div>
 				<div className="event-descr-wrapper col-md-8 col-lg-8">
 					<p className="event-title">{event.name}</p>
-					<div className="event-descr">{event.description.split("\n").map(i => {
-						return <p key={i} className="event-descr-paragraph">{i}</p>;
+					<div className="event-descr">{event.description.split("\n").map((data, index) => {
+						return (
+							<Linkify properties={{className:"event-descr-link", target:"_blank"}} key={index + "link"}>
+								<p key={index + "data"} className="event-descr-paragraph">{data}</p>
+							</Linkify>
+							);
 					})}</div>
-					<a className="event-link" href={eventLink}>View the Facebook event ></a>
+					<a className="event-link" href={eventLink} target="_blank">View the Facebook event ></a>
 				</div>
 			</div>
 		);

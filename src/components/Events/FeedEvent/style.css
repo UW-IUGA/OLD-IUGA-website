@@ -1,3 +1,8 @@
+a {
+    target-name:new;
+    target-new:tab;
+}
+
 .event-card {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -11,6 +16,10 @@
 .event-img {
     width:100%;
     padding: 0;
+}
+
+.event-descr {
+    word-wrap: break-word;
 }
 
 .event-img.wrapper {

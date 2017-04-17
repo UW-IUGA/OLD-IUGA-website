@@ -19,7 +19,6 @@ export default class Events extends Component {
 	componentDidMount() {
 		axios.get(FEED_URL)
 			.then(res => {
-				console.log(res.data);
 				this.setState({
 					events: res.data,
 				});
