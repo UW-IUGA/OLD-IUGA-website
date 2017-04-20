@@ -16,8 +16,6 @@ export default class FeedEvent extends Component {
 		if (!event) {
 			return null;
 		}
-
-		//let eventPlace = event.place;
 		if (HIDE_PAST_EVENTS) {
 			if (moment(event.start_time).diff(moment()) < 0) {
 				return null;
