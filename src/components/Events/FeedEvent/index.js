@@ -17,8 +17,24 @@ export default class FeedEvent extends Component {
 			return null;
 		}
 		if (HIDE_PAST_EVENTS) {
-			if (moment(event.start_time).diff(moment()) < 0) {
-				return null;
+			// If the events end_time exists, use it to decide when to hide an event,
+			// if not use the events start_time.
+			if (event.end_time) {
+				if (moment(event.end_time).diff(moment()) < 0) {
+					return null;
+				}
+			} else {
+				if (moment(event.start_time).diff(moment()) < 0) {
+					return null;
+				}
+			}
+		}
+
+		// Determine if the event is ongoing
+		let ongoing = false;
+		if (event.end_time) {
+			if (moment(event.end_time).diff(moment()) > 0 && moment(event.start_time).diff(moment()) < 0) {
+				ongoing = true;
 			}
 		}
 
@@ -35,7 +51,7 @@ export default class FeedEvent extends Component {
 		// if there is a location encoded in the event data.
 		let eventLocPre = event.place.location;
 		let eventLocLink;
-		if (event.place.location) {
+		if (eventLocPre) {
 			eventLocLink = "https://www.google.com/maps/place/";
 			if (eventLocPre.street) {
 				eventLocLink += eventLocPre.street + " " + eventLocPre.city + " " + eventLocPre.state + " " + eventLocPre.zip;
@@ -51,28 +67,34 @@ export default class FeedEvent extends Component {
 
 		return (
 			<div className="event-card row">
-				<div className="event-img-wrapper text-center col-md-2 col-lg-2">
-					<img className="event-img" src={event.cover.source}/>
-				</div>
-				<div className="event-period text-center col-md-2 col-lg-2">
-					<p className="event-time">{eventTime}</p>
-					<p className="event-date">{eventDate}</p>
-					{event.place.location ? (
-						<a href={eventLocLink} target="_blank"><p className="event-loc">{eventLoc}</p></a>
-					) : (
-						<p className="event-loc">{eventLoc}</p>
-					)}
-				</div>
-				<div className="event-descr-wrapper col-md-8 col-lg-8">
-					<p className="event-title">{event.name}</p>
-					<div className="event-descr">{event.description.split("\n").map((data, index) => {
-						return (
-							<Linkify properties={{className:"event-descr-link", target:"_blank"}} key={index + "link"}>
-								<p key={index + "data"} className="event-descr-paragraph">{data}</p>
-							</Linkify>
-							);
-					})}</div>
-					<a className="event-link" href={eventLink} target="_blank">View the Facebook event ></a>
+				<div className="event-card-content">
+					<div className="event-img-wrapper text-center col-md-2 col-lg-2">
+						<img className="event-img" src={event.cover.source}/>
+					</div>
+					<div className="event-period text-center col-md-2 col-lg-2">
+						{ongoing ? (
+							<p className="event-ongoing">Happening Now!</p>
+						) : (
+							<p className="event-time">{eventTime}</p>
+						)}
+						<p className="event-date">{eventDate}</p>
+						{event.place.location ? (
+							<a href={eventLocLink} target="_blank"><p className="event-loc">{eventLoc}</p></a>
+						) : (
+							<p className="event-loc">{eventLoc}</p>
+						)}
+					</div>
+					<div className="event-descr-wrapper col-md-8 col-lg-8">
+						<p className="event-title">{event.name}</p>
+						<div className="event-descr">{event.description.split("\n").map((data, index) => {
+							return (
+								<Linkify properties={{className:"event-descr-link", target:"_blank"}} key={index + "link"}>
+									<p key={index + "data"} className="event-descr-paragraph">{data}</p>
+								</Linkify>
+								);
+						})}</div>
+						<a className="event-link" href={eventLink} target="_blank">View the Facebook event ></a>
+					</div>
 				</div>
 			</div>
 		);

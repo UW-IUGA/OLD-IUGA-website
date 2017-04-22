@@ -1,17 +1,20 @@
 .event-card {
-    margin-top: 5px 0px;
-    margin-bottom: 5px;
-    color: #000000;
-    padding-top: 10px;
-    padding-left: -15px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 10px 0px 5px 0px;
+    padding: 10px 0px -15px;
     min-height: 180px;
+}
+
+.event-card-content {
+    margin: 10px 0px 0px;
 }
 
 .event-img {
     width:100%;
     padding: 0;
+}
+
+.event-ongoing {
+    color: #FB2C00;
 }
 
 .event-descr {
