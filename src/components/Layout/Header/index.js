@@ -27,6 +27,7 @@ export default class Header extends Component {
 							<li><IndexLink to="/" activeClassName="active">home</IndexLink></li>
 							<li><NavLink to="/about">about</NavLink></li>
 							<li><NavLink to="/events">events</NavLink></li>
+							<li><NavLink to="/gamenight">game night</NavLink></li>
 							<li><NavLink to="/elections">election</NavLink></li>
 							<li><a href="http://store.iuga.info/" target="_blank">store</a></li>
 						</ul>
