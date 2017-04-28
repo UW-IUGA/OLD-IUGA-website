@@ -5,6 +5,7 @@ import Layout from "./components/Layout";
 import Home from "./components/Home";
 import About from "./components/About";
 import Events from "./components/Events";
+import GameNight from "./components/GameNight";
 import Elections from "./components/Elections";
 import NotFound from "./components/NotFound";
 
@@ -15,6 +16,7 @@ const Routes = (
     <Route path="/events" component={Events}>
       <Route path=":unit" component={Events} />
     </Route>
+    <Route path="/gamenight" component={GameNight} />
     <Route path="/elections" component={Elections}>
       <Route path=":year" component={Elections} />
     </Route>
