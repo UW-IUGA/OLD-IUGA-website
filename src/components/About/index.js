@@ -213,6 +213,26 @@ export default class About extends Component {
 							</div>
 						</div>
 						<div className="clearfix visible-xs-block visible-sm-block visible-md-block"></div>
+
+						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+							<div className="officer">
+								<p><img alt="Chris" className="img-responsive" src="https://www.gravatar.com/avatar/c04ec6c32f3fd8009ab1632077f2af3c?s=1000" /></p>
+
+								<h3>Chris Oh</h3>
+
+								<h4>Director of Academic Support</h4>
+
+								<p>Description Placeholder</p>
+								<ul>
+									<li>Placeholder</li>
+									<li>Placeholder</li>
+									<li>Placeholder</li>
+									<li>Placeholder</li>
+									<li>Placeholder</li>
+								</ul>
+							</div>
+						</div>
+						<div className="clearfix visible-xs-block visible-sm-block visible-md-block"></div>
 					</div>
 				</section>
 
