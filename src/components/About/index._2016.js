@@ -47,9 +47,9 @@ export default class About extends Component {
 					<div className="row">
 						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
 							<div className="officer">
-								<p><img alt="Ethan" className="img-responsive" src="https://www.gravatar.com/avatar/28521494ce9da7d927333c96f5ec4e28?s=1000" width="400" height="200"/></p>
+								<p><img alt="Jonathan" className="img-responsive" src="https://www.gravatar.com/avatar/8aa96fc9abda4b04531dee602d5cdf32?s=1000" /></p>
 
-								<h3>Ethan Anderson</h3>
+								<h3>Jonathan Li</h3>
 
 								<h4>President</h4>
 
@@ -68,9 +68,9 @@ export default class About extends Component {
 
 						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-4" id="marissa">
 							<div className="officer">
-								<p><img alt="Jessica" className="img-responsive" src="https://www.gravatar.com/avatar/e8df77a324da6f00cade54b6e385730c?s=1000" /></p>
+								<p><img alt="Rutvi" className="img-responsive" src="https://www.gravatar.com/avatar/368ef6574111d83a15f14531015d5ed6?s=1000" /></p>
 
-								<h3>Jessica Libman</h3>
+								<h3>Rutvi Patel</h3>
 
 								<h4>Vice President</h4>
 
@@ -91,9 +91,9 @@ export default class About extends Component {
 
 						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
 							<div className="officer">
-								<p><img alt="Davin" className="img-responsive" src="https://www.gravatar.com/avatar/f3d811ac78807ea22b000804c26c615c?s=1000" /></p>
+								<p><img alt="Benjamin" className="img-responsive" src="https://www.gravatar.com/avatar/26cb21246aa457f6ead3a57fca868759?s=1000" /></p>
 
-								<h3>Davin Lee</h3>
+								<h3>Benjamin Leeds</h3>
 
 								<h4>Director of Finance</h4>
 
@@ -114,9 +114,9 @@ export default class About extends Component {
 
 						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
 							<div className="officer">
-								<p><img alt="Daniel" className="img-responsive" src="https://www.gravatar.com/avatar/7e13167224e4e12901e99cdc738e609d?s=1000" /></p>
+								<p><img alt="Jenna" className="img-responsive" src="https://www.gravatar.com/avatar/beb353c0f356b4ab09a152ca9fe3f7f2?s=1000" /></p>
 
-								<h3>Daniel Hoang</h3>
+								<h3>Jenna Han</h3>
 
 								<h4>Creative Director</h4>
 
@@ -134,9 +134,9 @@ export default class About extends Component {
 
 						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
 							<div className="officer">
-								<p><img alt="Alex" className="img-responsive" src="https://www.gravatar.com/avatar/a0276c2499a4226ad89bab4167381329?s=1000" /></p>
+								<p><img alt="Brad" className="img-responsive" src="https://www.gravatar.com/avatar/c4f182933dfd04a4984ef7e009e858d1?s=1000" /></p>
 
-								<h3>Alex Gilbert</h3>
+								<h3>Brad Holland</h3>
 
 								<h4>Director of Public Relations</h4>
 
@@ -153,9 +153,9 @@ export default class About extends Component {
 
 						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
 							<div className="officer">
-								<p><img alt="Sanjana" className="img-responsive" src="https://www.gravatar.com/avatar/61467e82d8a0a535adc0dc4bd21c744f?s=1000" /></p>
+								<p><img alt="Natasha" className="img-responsive" src="https://www.gravatar.com/avatar/1201397bcbfe3da7c242070a35b47faa?s=1000" /></p>
 
-								<h3>Sanjana Galgalikar</h3>
+								<h3>Natasha Dietzler</h3>
 
 								<h4>Director of Outreach</h4>
 
@@ -172,9 +172,9 @@ export default class About extends Component {
 
 						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
 							<div className="officer">
-								<p><img alt="Rosemary" className="img-responsive" src="https://www.gravatar.com/avatar/a8a0c7ddb4baf8ef9c4ca500ae78a4fe?s=1000" /></p>
+								<p><img alt="Royce" className="img-responsive" src="https://www.gravatar.com/avatar/a47caea56dab94763c1758716f4271f6?s=1000" /></p>
 
-								<h3>Rosemary Adams</h3>
+								<h3>Royce Le</h3>
 
 								<h4>Director of Diversity Efforts</h4>
 
@@ -194,9 +194,9 @@ export default class About extends Component {
 
 						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
 							<div className="officer">
-								<p><img alt="Brendan" className="img-responsive" src="https://www.gravatar.com/avatar/cf22063adb17e4e0b9e2d60500b818fe?s=1000" /></p>
+								<p><img alt="Alexander" className="img-responsive" src="https://www.gravatar.com/avatar/9f754f75fe3b4510e7fa4638038489e0?s=1000" /></p>
 
-								<h3>Brendan Kellogg</h3>
+								<h3>Alexander Bell-Towne</h3>
 
 								<h4>Director of Information Technology</h4>
 
