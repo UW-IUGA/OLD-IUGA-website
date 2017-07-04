@@ -200,15 +200,15 @@ export default class About extends Component {
 
 								<h4>Director of Information Technology</h4>
 
-								<p>The director of Information Technology helps run the Association&rsquo;s technology projects and online presence. While providing support when needed. This is done by doing the following:</p>
+								<p>The Director of Information Technology helps run the Association&rsquo;s technology projects and online presence. While providing support when needed. This is done by doing the following:</p>
 								<ul>
-									<li>Maintain and update the IUGA Website and associated websites using the latest web technologies.</li>
-									<li>Monitor and maintain the IUGA gaming servers and associated assets.</li>
-									<li>Maintain all IUGA online account credentials in a secure and scalable system.</li>
-									<li>Manage permissions and security settings for IUGA assets across social networks and collaborative systems.</li>
-									<li>Oversee and run technology aspects of IUGA events, including the quarterly Game Night.</li>
-									<li>Work closely with iSchool IT and the Administration to connect the student body with all available technology and services.</li>
-									<li>Support, Service, and Create Technology solutions for needs within the Association and the iSchool.</li>
+									<li>Maintain and update the IUGA Website and associated websites using the latest web technologies</li>
+									<li>Monitor and maintain the IUGA gaming servers and associated assets</li>
+									<li>Maintain all IUGA online account credentials in a secure and scalable system</li>
+									<li>Manage permissions and security settings for IUGA assets across social networks and collaborative systems</li>
+									<li>Oversee and run technology aspects of IUGA events, including the quarterly Game Night</li>
+									<li>Work closely with iSchool IT and the Administration to connect the student body with all available technology and services</li>
+									<li>Support, Service, and Create Technology solutions for needs within the Association and the iSchool</li>
 								</ul>
 							</div>
 						</div>
@@ -222,13 +222,12 @@ export default class About extends Component {
 
 								<h4>Director of Academic Support</h4>
 
-								<p>Description Placeholder</p>
+								<p>The Director of Academic Support is responsible for supporting the academic needs within the Informatics Program. These responsibilities Include:</p>
 								<ul>
-									<li>Placeholder</li>
-									<li>Placeholder</li>
-									<li>Placeholder</li>
-									<li>Placeholder</li>
-									<li>Placeholder</li>
+									<li>Understand the needs of current students</li>
+									<li>Organize and promote academic related events</li>
+									<li>Maintain the Informatics wiki, which helps to provide available resources</li>
+									<li>Work closely with other organization to conduct joint events</li>
 								</ul>
 							</div>
 						</div>
