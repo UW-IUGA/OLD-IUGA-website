@@ -227,7 +227,7 @@ export default class About extends Component {
 									<li>Understand the needs of current students</li>
 									<li>Organize and promote academic related events</li>
 									<li>Maintain the Informatics wiki, which helps to provide available resources</li>
-									<li>Work closely with other organization to conduct joint events</li>
+									<li>Work closely with other organizations to conduct joint events</li>
 								</ul>
 							</div>
 						</div>
