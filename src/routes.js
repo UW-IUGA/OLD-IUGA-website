@@ -2,7 +2,7 @@ import React from "react";
 import {Route, IndexRoute} from "react-router";
 
 import Layout from "./components/Layout";
-import Home from "./components/Home";
+// import Home from "./components/Home";
 import About from "./components/About";
 import Events from "./components/Events";
 import Elections from "./components/Elections";
@@ -10,8 +10,7 @@ import NotFound from "./components/NotFound";
 
 const Routes = (
   <Route path="/" component={Layout}>
-    <IndexRoute component={Home} />
-    <Route path="/about" component={About} />
+    <IndexRoute component={About} />
     <Route path="/events" component={Events}>
       <Route path=":unit" component={Events} />
     </Route>

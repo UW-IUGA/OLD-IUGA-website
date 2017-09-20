@@ -25,7 +25,6 @@ export default class Header extends Component {
 						<a href="/"></a>
 						<ul id="big-nav">
 							<li><IndexLink to="/" activeClassName="active">home</IndexLink></li>
-							<li><NavLink to="/about">about</NavLink></li>
 							<li><NavLink to="/events">events</NavLink></li>
 							<li><NavLink to="/elections">election</NavLink></li>
 							<li><a href="http://store.iuga.info/" target="_blank">store</a></li>
@@ -41,7 +40,6 @@ export default class Header extends Component {
 
 					<ul id="small-nav">
 						<li><IndexLink to="/" activeClassName="active">home</IndexLink></li>
-						<li><NavLink to="/about">about</NavLink></li>
 						<li><NavLink to="/events">events</NavLink></li>
 						<li><NavLink to="/elections">election</NavLink></li>
 						<li><a href="http://store.iuga.info/" target="_blank">store</a></li>
