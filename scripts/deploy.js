@@ -10,7 +10,6 @@ process.env.PUBLICURL = process.env.PUBLICURL || `http://${prefix}iuga.info`;
 var rsync = new Rsync()
   .exclude('.DS_Store')
   .flags('av')
-  .set("delete")
   .shell('ssh -p 7822')
   .source('./build/')
   .destination(`iuga@iuga.info:~/www/${path}`)
