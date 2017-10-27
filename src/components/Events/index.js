@@ -5,7 +5,7 @@ import FeedEvent from "./FeedEvent";
 
 import "./style.css";
 
-const FEED_URL = "https://iuga-server.ischool.uw.edu:4000/get";
+const FEED_URL = "https://iuga.info/api/v1/events";
 
 export default class Events extends Component {
 	constructor(props) {
