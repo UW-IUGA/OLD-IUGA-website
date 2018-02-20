@@ -1,0 +1,298 @@
+{
+    "organizations": [
+        {
+            "name": "IUGA",
+            "roles": [
+                {
+                    "title": "President",
+                    "candidates": [
+                        {
+                            "name": "Andrea Chen",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        },
+                        {
+                            "name": "Chelsea Le",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        }
+                    ]
+                },
+                {
+                    "title": "Vice-President",
+                    "candidates": [
+                        {
+                            "name": "Neha Yadav",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        },
+                        {
+                            "name": "Mano Barkovics",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        }
+                    ]
+                },
+                {
+                    "title": "Director of Public Relations",
+                    "candidates": [
+                        {
+                            "name": "Ian Figon",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        },
+                        {
+                            "name": "Patrick Old",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        }
+                    ]
+                },
+                {
+                    "title": "Director of Outreach",
+                    "candidates": [
+                        {
+                            "name": "Cole French",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        }
+                    ]
+                },
+                {
+                    "title": "Director of Finance",
+                    "candidates": [
+                        {
+                            "name": "Anushree Gopal",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        },
+                        {
+                            "name": "Anton Zheng",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        }
+                    ]
+                },
+                {
+                    "title": "Director of Diversity Efforts",
+                    "candidates": [
+                        {
+                            "name": "Ali Rafiq",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        },
+                        {
+                            "name": "Katie Goulding",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        },
+                        {
+                            "name": "Sulekha Ali",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        }
+                    ]
+                },
+                {
+                    "title": "Creative Director",
+                    "candidates": [
+                        {
+                            "name": "Sagar Surana",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        },
+                        {
+                            "name": "David Lee",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        },
+                        {
+                            "name": "Oorja Chowdhary",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        }
+                    ]
+                },
+                {
+                    "title": "Director of Information Technology",
+                    "candidates": [
+                        {
+                            "name": "Ryan Keller",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        },
+                        {
+                            "name": "Kidus Yohanes",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        }
+                    ]
+                },
+                {
+                    "title": "Director of Academic Support",
+                    "candidates": [
+                        {
+                            "name": "Wesley Wei",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        },
+                        {
+                            "name": "Joesph Tsai",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        },
+                        {
+                            "name": "Saurav Kharb",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "WINFO",
+            "roles": [
+                {
+                    "title": "President",
+                    "candidates": [
+                        {
+                            "name": "Stephanie Burd",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        }
+                    ]
+                },
+                {
+                    "title": "Vice-President",
+                    "candidates": [
+                        {
+                            "name": "August Carow",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        }
+                    ]
+                },
+                {
+                    "title": "Director of Public Relations",
+                    "candidates": [
+                        {
+                            "name": "Mary Huibregtse",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        }
+                    ]
+                },
+                {
+                    "title": "Director of Outreach",
+                    "candidates": [
+                        {
+                            "name": "Emma Ropes",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        },
+                        {
+                            "name": "Alexis Choi",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        }
+                    ]
+                },
+                {
+                    "title": "Director of Finance",
+                    "candidates": [
+                        {
+                            "name": "Zhiqi Lin",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        }
+                    ]
+                },
+                {
+                    "title": "Director of Diversity Efforts",
+                    "candidates": [
+                        {
+                            "name": "Min Yang",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        },
+                        {
+                            "name": "Harshitha Akkaraju",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        },
+                        {
+                            "name": "Stefani Sanchez",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        },
+                        {
+                            "name": "Changyu Li",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        },
+                        {
+                            "name": "Christie Gan",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        }
+                    ]
+                },
+                {
+                    "title": "Creative Director",
+                    "candidates": [
+                        {
+                            "name": "Echo Zang",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        },
+                        {
+                            "name": "Thoa Nguyen",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        },
+                        {
+                            "name": "Yiran Ni",
+                            "image": "http://lorempixel.com/g/200/400/",
+                            "video": "",
+                            "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nibh ac laoreet lacinia. Fusce posuere malesuada ante, sodales lacinia diam facilisis eget. Proin ut metus sem. Aliquam commodo pellentesque erat eget lacinia. Nam in diam eu libero cursus commodo et a massa. Fusce varius vitae neque a malesuada. Cras molestie eros sed accumsan mattis. Aenean ut dui eu metus aliquam tincidunt vitae ut justo. Curabitur in nibh maximus massa pharetra finibus eu id justo. Sed in vehicula nibh, at convallis eros. In hac habitasse platea dictumst. Nulla volutpat luctus lorem nec pretium. Fusce mauris purus, ultricies at elit non, tincidunt gravida diam. Phasellus purus diam, imperdiet ac aliquet eu, finibus id tortor. Curabitur venenatis dolor ac imperdiet dapibus."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

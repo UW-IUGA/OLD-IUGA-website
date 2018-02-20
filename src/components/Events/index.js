@@ -27,17 +27,18 @@ export default class Events extends Component {
 	
 	render() {
 		let events = this.state.events;
-		if (events == null) {
-			return null;
-		}
 
 		return (
 			<div>
 				<h1>Upcoming IUGA Events</h1>
-
-				{events.reverse().map((event) => (
-					<FeedEvent event={event} key={event.id}></FeedEvent>
-				))}
+				{events != null ? (
+					events.reverse().map((event) => (
+						<FeedEvent event={event} key={event.id}></FeedEvent>
+					))
+				) : (
+					<center><p>Looks like we're having trouble getting events from the IUGA event server. If this continues
+					please contact <a href="mailto:iuga@uw.edu">iuga@uw.edu</a>.</p></center>
+				)}
 			</div>
 		);
 	}
