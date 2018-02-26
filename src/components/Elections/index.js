@@ -149,7 +149,7 @@ export default class Elections extends Component {
 							Fill out Ballot
 						</a>
 					</p>
-					<p>Polls closes <strong className="closes">{ballot.date}</strong> at <strong className="closes">{ballot.time}</strong></p>
+					<p>Polls close <strong className="closes">{ballot.date}</strong> at <strong className="closes">{ballot.time}</strong></p>
 				</div>
 			);
 		}

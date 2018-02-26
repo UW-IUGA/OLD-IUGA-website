@@ -33,7 +33,6 @@ let headTags = {
 		(<meta property="og:title"        content="Informatics Undergraduate Association (IUGA)"/>),
 		(<meta property="og:site_name"    content="Informatics Undergraduate Association (IUGA)"/>),
 		(<meta property="og:description"  content="The Informatics Undergraduate Association (IUGA) is a Registered Student Organization that functions as a student government for Informatics students."/>),
-		(<meta property="og:image"        content="http://iuga.info/assets/img/main-banner-image.jpg"/>),
 		(<meta property="og:type"         content="school"/>),
 
 		// Twitter Summary Card: https://dev.twitter.com/cards/types/summary
