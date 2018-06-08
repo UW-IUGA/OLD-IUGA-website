@@ -16,6 +16,8 @@ const Routes = (
     <Route path="/elections" component={Elections}>
       <Route path=":year" component={Elections} />
     </Route>
+    <Route path="/waiver" component={() => window.location.href="https://goo.gl/forms/AQqEp64JYHqN0cCw1"} />
+    <Route path="/waiver2" component={() => window.location.href="https://goo.gl/forms/pyAWvJEJOQP00UxV2"} />
     <Route path="*" component={NotFound} />
   </Route>
 );

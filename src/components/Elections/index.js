@@ -26,7 +26,6 @@ export default class Elections extends Component {
 			let years = res.data;
 			let year = this.props.params.year;
 			if (!year) {
-				console.log("year not set");
 				year = years[years.length - 1];
 				this.props.router.replace(`/elections/${year}`);
 			}

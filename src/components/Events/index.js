@@ -36,8 +36,7 @@ export default class Events extends Component {
 						<FeedEvent event={event} key={event.id}></FeedEvent>
 					))
 				) : (
-					<center><p>Looks like we're having trouble getting events from the IUGA event server. If this continues
-					please contact <a href="mailto:iuga@uw.edu">iuga@uw.edu</a>.</p></center>
+					<center><p>Due to recent changes to Facebook's Graph API, this events page is unable to fetch the information needed to display IUGA events.</p></center>
 				)}
 			</div>
 		);
