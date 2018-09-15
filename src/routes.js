@@ -2,7 +2,6 @@ import React from "react";
 import {Route, IndexRoute} from "react-router";
 
 import Layout from "./components/Layout";
-// import Home from "./components/Home";
 import About from "./components/About";
 import Events from "./components/Events";
 import Elections from "./components/Elections";
@@ -17,6 +16,8 @@ const Routes = (
     <Route path="/elections" component={Elections}>
       <Route path=":year" component={Elections} />
     </Route>
+    <Route path="/waiver" component={() => window.location.href="https://goo.gl/forms/AQqEp64JYHqN0cCw1"} />
+    <Route path="/waiver2" component={() => window.location.href="https://goo.gl/forms/pyAWvJEJOQP00UxV2"} />
     <Route path="*" component={NotFound} />
   </Route>
 );

@@ -49,7 +49,7 @@ export default class Candidate extends Component {
 						<div className="row">
 							<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 								<div className="embed-responsive embed-responsive-16by9">
-									<iframe className="embed-responsive-item" src={this.props.candidate.video} frameBorder="0" allowFullScreen></iframe>
+									<iframe width="560" height="315" src={this.props.candidate.video} frameBorder="0" allowFullScreen></iframe>
 								</div>
 							</div>
 						</div>

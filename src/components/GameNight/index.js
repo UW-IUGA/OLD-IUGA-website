@@ -4,9 +4,12 @@ import React, { Component } from "react";
 export default class GameNight extends Component {
 	render() {
 		return (
-            <center>
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfzkWdzz0ClELHMPUpcfwU1-oC1tPOrVQLyRA97L7IMUsH2yQ/viewform?embedded=true" width="700" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-            </center>
+            <div>
+                <h1>IUGA Game Night</h1>
+                <center>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc5jG58c6EXI6Cv_lRlxQHA6qTbsyxZGWp8XgbU-MeqIlYXwQ/viewform?embedded=true" width="700" height="2000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                </center>
+            </div>
 		);
 	}
 }

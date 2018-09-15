@@ -148,7 +148,7 @@ export default class Elections extends Component {
 							Fill out Ballot
 						</a>
 					</p>
-					<p>Polls closes <strong className="closes">{ballot.date}</strong> at <strong className="closes">{ballot.time}</strong></p>
+					<p>Polls close <strong className="closes">{ballot.date}</strong> at <strong className="closes">{ballot.time}</strong></p>
 				</div>
 			);
 		}
@@ -157,7 +157,7 @@ export default class Elections extends Component {
 			<div className={classnames("Elections", this.props.className)}>
 				<div className="row">
 					<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-						<h1>IUGA / Winfo Elections</h1>
+						<h1>IUGA / WINFO Elections</h1>
 					</div>
 				</div>
 

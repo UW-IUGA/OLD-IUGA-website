@@ -27,17 +27,17 @@ export default class Events extends Component {
 	
 	render() {
 		let events = this.state.events;
-		if (events == null) {
-			return null;
-		}
 
 		return (
 			<div>
 				<h1>Upcoming IUGA Events</h1>
-
-				{events.reverse().map((event) => (
-					<FeedEvent event={event} key={event.id}></FeedEvent>
-				))}
+				{events != null ? (
+					events.reverse().map((event) => (
+						<FeedEvent event={event} key={event.id}></FeedEvent>
+					))
+				) : (
+					<center><p>Due to recent changes to Facebook's Graph API, this events page is unable to fetch the information needed to display IUGA events.</p></center>
+				)}
 			</div>
 		);
 	}

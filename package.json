@@ -2,7 +2,7 @@
   "name": "website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://iuga.info/",
+  "homepage": "https://iuga.info/",
   "devDependencies": {
     "autoprefixer": "6.7.2",
     "babel-core": "6.22.1",
