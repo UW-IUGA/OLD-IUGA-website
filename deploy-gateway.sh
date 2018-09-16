@@ -1,3 +1,5 @@
+# THIS SCRIPT IS DEPRECATED
+
 docker rm -f iugaserver
 
 docker run -d --name iugaserver \
