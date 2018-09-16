@@ -1,3 +1,5 @@
+# THIS SCRIPT IS DEPRECATED
+
 docker pull brendankellogg/iugaevtapi
 docker pull redis
 
