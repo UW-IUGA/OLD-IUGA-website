@@ -47,7 +47,7 @@ export default class About extends Component {
 					<div className="row">
 						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
 							<div className="officer">
-								<p><img alt="Ethan" className="img-responsive" src="https://www.gravatar.com/avatar/28521494ce9da7d927333c96f5ec4e28?s=1000" width="400" height="200"/></p>
+								<p><img alt="Ethan" className="img-responsive" src="https://www.gravatar.com/avatar/28521494ce9da7d927333c96f5ec4e28?s=1000" width="400" height="200" /></p>
 
 								<h3>Ethan Anderson</h3>
 
@@ -196,7 +196,7 @@ export default class About extends Component {
 							<div className="officer">
 								<p><img alt="Brendan" className="img-responsive" src="https://www.gravatar.com/avatar/cf22063adb17e4e0b9e2d60500b818fe?s=1000" /></p>
 
-								<h3>Brendan Kellogg</h3>
+								<h3>Kidus Sendeke</h3>
 
 								<h4>Director of Information Technology</h4>
 
