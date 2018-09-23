@@ -47,9 +47,9 @@ export default class About extends Component {
 					<div className="row">
 						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
 							<div className="officer">
-								<p><img alt="Ethan" className="img-responsive" src="https://www.gravatar.com/avatar/28521494ce9da7d927333c96f5ec4e28?s=1000" width="400" height="200" /></p>
+								<p><img alt="Andrea" className="img-responsive" src="https://www.gravatar.com/avatar/109df86e7dc234e29eed73115ad3ca71?s=1000" width="400" height="200" /></p>
 
-								<h3>Ethan Anderson</h3>
+								<h3>Andrea Chen</h3>
 
 								<h4>President</h4>
 
@@ -68,9 +68,9 @@ export default class About extends Component {
 
 						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-4" id="marissa">
 							<div className="officer">
-								<p><img alt="Jessica" className="img-responsive" src="https://www.gravatar.com/avatar/e8df77a324da6f00cade54b6e385730c?s=1000" /></p>
+								<p><img alt="Mano" className="img-responsive" src="https://www.gravatar.com/avatar/62782daed92d85748548123929ca1d4d?s=1000" /></p>
 
-								<h3>Jessica Libman</h3>
+								<h3>Mano Barkovics</h3>
 
 								<h4>Vice President</h4>
 
@@ -91,9 +91,9 @@ export default class About extends Component {
 
 						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
 							<div className="officer">
-								<p><img alt="Davin" className="img-responsive" src="https://www.gravatar.com/avatar/f3d811ac78807ea22b000804c26c615c?s=1000" /></p>
+								<p><img alt="Anton" className="img-responsive" src="https://www.gravatar.com/avatar/88412251529091bf4491dd0654c25560?s=1000" /></p>
 
-								<h3>Davin Lee</h3>
+								<h3>Anton Zheng</h3>
 
 								<h4>Director of Finance</h4>
 
@@ -114,9 +114,9 @@ export default class About extends Component {
 
 						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
 							<div className="officer">
-								<p><img alt="Daniel" className="img-responsive" src="https://www.gravatar.com/avatar/7e13167224e4e12901e99cdc738e609d?s=1000" /></p>
+								<p><img alt="Oorja" className="img-responsive" src="https://www.gravatar.com/avatar/950ebafc999924dc62601e9bac241c2b?s=1000" /></p>
 
-								<h3>Daniel Hoang</h3>
+								<h3>Oorja Chowdhary</h3>
 
 								<h4>Creative Director</h4>
 
@@ -134,9 +134,9 @@ export default class About extends Component {
 
 						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
 							<div className="officer">
-								<p><img alt="Alex" className="img-responsive" src="https://www.gravatar.com/avatar/a0276c2499a4226ad89bab4167381329?s=1000" /></p>
+								<p><img alt="Neha" className="img-responsive" src="https://www.gravatar.com/avatar/3ca0ddf9ef0d5d75b90099f773af44c6?s=1000" /></p>
 
-								<h3>Alex Gilbert</h3>
+								<h3>Neha Yadav</h3>
 
 								<h4>Director of Public Relations</h4>
 
@@ -153,9 +153,9 @@ export default class About extends Component {
 
 						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
 							<div className="officer">
-								<p><img alt="Sanjana" className="img-responsive" src="https://www.gravatar.com/avatar/61467e82d8a0a535adc0dc4bd21c744f?s=1000" /></p>
+								<p><img alt="Cole" className="img-responsive" src="https://www.gravatar.com/avatar/2290d8b873db5b7aa33465b8531f3523?s=1000" /></p>
 
-								<h3>Sanjana Galgalikar</h3>
+								<h3>Cole French</h3>
 
 								<h4>Director of Outreach</h4>
 
@@ -172,9 +172,9 @@ export default class About extends Component {
 
 						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
 							<div className="officer">
-								<p><img alt="Rosemary" className="img-responsive" src="https://www.gravatar.com/avatar/a8a0c7ddb4baf8ef9c4ca500ae78a4fe?s=1000" /></p>
+								<p><img alt="Katie" className="img-responsive" src="https://www.gravatar.com/avatar/9e9f9906a56a8fb55be60792d9b2e641?s=1000" /></p>
 
-								<h3>Rosemary Adams</h3>
+								<h3>Katie Goulding</h3>
 
 								<h4>Director of Diversity Efforts</h4>
 
@@ -194,7 +194,7 @@ export default class About extends Component {
 
 						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
 							<div className="officer">
-								<p><img alt="Brendan" className="img-responsive" src="https://www.gravatar.com/avatar/cf22063adb17e4e0b9e2d60500b818fe?s=1000" /></p>
+								<p><img alt="Kidus" className="img-responsive" src="https://www.gravatar.com/avatar/329c17c44c22a447870f4a44dc058b4d?s=1000" /></p>
 
 								<h3>Kidus Sendeke</h3>
 
@@ -216,9 +216,9 @@ export default class About extends Component {
 
 						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
 							<div className="officer">
-								<p><img alt="Chris" className="img-responsive" src="https://www.gravatar.com/avatar/c04ec6c32f3fd8009ab1632077f2af3c?s=1000" /></p>
+								<p><img alt="Joseph" className="img-responsive" src="https://www.gravatar.com/avatar/4792d2e7122ae281cc57dcd31cccac99?s=1000" /></p>
 
-								<h3>Chris Oh</h3>
+								<h3>Joseph Tsai</h3>
 
 								<h4>Director of Academic Support</h4>
 
