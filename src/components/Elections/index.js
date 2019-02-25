@@ -175,7 +175,7 @@ export default class Elections extends Component {
 
 						<ul className="organizations menu-list">
 							{ organizations &&
-								organizations.map((organization) => (
+								organizations.map((organization) => (									
 									<li key={organization.name} className="organization menu-list-item">
 										<a onClick={() => this.selectOrganization(organization)}
 											className={this.checkOrganizationMatch(this.state.organization, organization) ? "active" : ""}>{organization.name}</a>

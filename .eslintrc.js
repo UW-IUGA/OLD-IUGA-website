@@ -1,38 +1,26 @@
 module.exports = {
-    "env": {
-        "browser": true,
-        "es6": true
-    },
-    "extends": "eslint:recommended",
-    "parserOptions": {
-        "ecmaFeatures": {
-            "experimentalObjectRestSpread": true,
-            "jsx": true
-        },
-        "sourceType": "module"
-    },
     "plugins": [
         "react"
     ],
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "env": {
+        "es6":     true,
+        "browser": true,
+        "mocha":   true,
+        "node":    true
+    },   
+    "extends": [
+        "eslint:recommended", 
+        "plugin:react/recommended"
+    ],    
     "rules": {
-        "react/jsx-uses-react": "error",
-        "react/jsx-uses-vars": "error",
-        "indent": [
-            "error",
-            "tab"
-        ],
-        "no-console": 0,
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "quotes": [
-            "error",
-            "double"
-        ],
-        "semi": [
-            "error",
-            "always"
-        ]
+        "react/prop-types": 0,
+        "no-console":0
     }
-};
+}

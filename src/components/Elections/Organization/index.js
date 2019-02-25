@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import classnames from "classnames";
-
 import Role from "./Role";
 import Candidate from "./Candidate";
 
@@ -13,7 +12,7 @@ export default class Organization extends Component {
 		this.state = {
 			year: null,
 			organization: null,
-			candidate: null
+			candidate: null,
 		};
 	}
 
@@ -29,13 +28,13 @@ export default class Organization extends Component {
 			// Select first candidate
 			if (organization.roles) {
 				let candidate = this.props.organization.roles[0]["candidates"][0];
-				candidate.role = this.props.organization.roles[0]["title"];
+				candidate.role = this.props.organization.roles[0]['title'];
 				candidate.year = year;
 				candidate.organization = this.props.organization.name;
 				this.setState({
 					year: year,
 					organization: organization,
-					candidate: candidate
+					candidate: candidate,
 				});
 			}
 		}
@@ -53,24 +52,24 @@ export default class Organization extends Component {
 			return null;
 		}
 		let roles = this.props.organization.roles;
-
 		const { className } = this.props;
 		return (
 			<div className={classnames("Organization", className)}>
 				<div className="row">
 					<div className="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-						<h2>{this.props.year} {this.props.organization.name} Candidates:</h2>
+						<h2>{this.props.year} {this.props.organization.name} Candidates: </h2>
+						{/* <h2>{this.props.year} {this.props.organization.name} Positions: </h2>  for promoting the positions */}
+
 						<ul className="list">
-							{
-								roles.map((role) => (
-									<Role key={role.title} selectedCandidate={this.state.candidate} role={role} selectCandidate={(candidate, role) => this.selectCandidate(candidate, role)}/>
-								))
+							{ roles.map((role) => (	
+								<Role key={role.title} selectedCandidate={this.state.candidate} role={role} selectCandidate={(candidate, role) => this.selectCandidate(candidate, role)}/>
+								)) 
 							}
 						</ul>
 						{this.props.ballot}
 					</div>
 					<div className="col-xs-12 col-sm-6 col-md-8 col-lg-8">
-						<Candidate candidate={this.state.candidate} year={this.state.year} />
+						<Candidate role={this.state} candidate={this.state.candidate} year={this.state.year} />
 					</div>
 				</div>
 			</div>

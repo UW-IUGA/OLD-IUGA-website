@@ -11,19 +11,23 @@ export default class Role extends Component {
 
 		const { className } = this.props;
 		return (
-			<li className={classnames("Role", className)}>{this.props.role.title}
-				<ul>
-					{
-						this.props.role.candidates.map((candidate) => (
+			<div className="row">
+				<li className={classnames("Role", className)}>
+						{this.props.role.title} 
+					<ul>
+						{ this.props.role.candidates.map(candidate => (
 							<li key={candidate.name} className="name">
-								<a
-									onClick={() => this.props.selectCandidate(candidate, this.props.role.title)}
-									className={(this.props.selectedCandidate === candidate ? " active" : "")}
-								>{candidate.name}{candidate.outcome != null ? ((<small className="Elected"> - {candidate.outcome}</small>)) : ""}</a></li>
-						))
-					}
-				</ul>
-			</li>
+							<a onClick={() => this.props.selectCandidate(candidate, this.props.role.title)} className={
+								this.props.selectedCandidate === candidate ? " active" : "" } >
+								{candidate.name}
+								{candidate.outcome != null ? ((
+								<small className="Elected blue"> - {candidate.outcome}</small>)) : ("")} 
+							</a>
+							</li>
+						))}
+					</ul>
+				</li>
+			</div>
 		);
 	}
 }

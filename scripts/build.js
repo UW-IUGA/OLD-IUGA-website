@@ -5,7 +5,7 @@ if (process.env.NODE_ENV !== 'pre-dev') process.env.NODE_ENV = 'production';
 // if this file is missing. dotenv will never modify any environment variables
 // that have already been set.
 // https://github.com/motdotla/dotenv
-require('dotenv').config({silent: true});
+require('dotenv').config({ silent: true });
 
 var chalk = require('chalk');
 var fs = require('fs-extra');
@@ -109,17 +109,17 @@ function printFileSizes(stats, previousSizeMap) {
   });
 }
 
-var walk = function(dir, done) {
+var walk = function (dir, done) {
   var results = [];
-  fs.readdir(dir, function(err, list) {
+  fs.readdir(dir, function (err, list) {
     if (err) return done(err);
     var pending = list.length;
     if (!pending) return done(null, results);
-    list.forEach(function(file) {
+    list.forEach(function (file) {
       file = path.resolve(dir, file);
-      fs.stat(file, function(err, stat) {
+      fs.stat(file, function (err, stat) {
         if (stat && stat.isDirectory()) {
-          walk(file, function(err, res) {
+          walk(file, function (err, res) {
             results = results.concat(res);
             if (!--pending) done(null, results);
           });
@@ -198,9 +198,9 @@ function build(previousSizeMap) {
     }
 
     if (process.env.CI && stats.compilation.warnings.length) {
-     printErrors('Failed to compile. When process.env.CI = true, warnings are treated as failures. Most CI servers set this automatically.', stats.compilation.warnings);
-     process.exit(1);
-   }
+      printErrors('Failed to compile. When process.env.CI = true, warnings are treated as failures. Most CI servers set this automatically.', stats.compilation.warnings);
+      process.exit(1);
+    }
 
     if (process.env.NODE_ENV === 'pre-dev') {
       buildHtmlSources(stats);
@@ -224,12 +224,12 @@ function build(previousSizeMap) {
     console.log();
 
     var openCommand = process.platform === 'win32' ? 'start' : 'open';
-    var appPackage  = require(paths.appPackageJson);
+    var appPackage = require(paths.appPackageJson);
     var publicUrl = process.env.PUBLICURL || paths.publicUrl;
 
     console.log('The project was built assuming it is hosted at ' + chalk.green(publicUrl) + '.');
     if (!process.env.PUBLICURL) {
-      console.log('You can control this with the ' + chalk.green('homepage') + ' field in your '  + chalk.cyan('package.json') + '.');
+      console.log('You can control this with the ' + chalk.green('homepage') + ' field in your ' + chalk.cyan('package.json') + '.');
     }
     console.log();
     console.log('The ' + chalk.cyan('build') + ' folder is ready to be deployed.');
