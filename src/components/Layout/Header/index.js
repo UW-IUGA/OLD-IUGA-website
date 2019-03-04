@@ -28,10 +28,10 @@ export default class Header extends Component {
 							<li><NavLink to="/events">events</NavLink></li>
 							<li><NavLink to="/elections">election</NavLink></li>
 							<li><a href="http://store.iuga.info/" target="_blank">store</a></li>
-							<li>
+							{/* <li>
 								<a href="https://catalyst.uw.edu/webq/survey/kiduss/366946" className="button7" target="_blank"><span>vote</span>
 								</a>
-							</li>
+							</li> */}
 						</ul>
 						<button type="button" onClick={() => {this.toggle();}} className="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 							<span className="glyphicon glyphicon-th-list"></span>
@@ -47,11 +47,11 @@ export default class Header extends Component {
 						<li><NavLink to="/events">events</NavLink></li>
 						<li><NavLink to="/elections">election</NavLink></li>
 						<li><a href="http://store.iuga.info/" target="_blank">store</a></li>
-						<li>
+						{/* <li>
 							<a href="https://catalyst.uw.edu/webq/survey/kiduss/366946" className="button7" target="_blank">
 							<span>Vote</span>
 							</a>
-						</li>
+						</li> */}
 					</ul>
 
 				</div>
